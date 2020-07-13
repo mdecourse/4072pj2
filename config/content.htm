@@ -1,0 +1,224 @@
+<h1>About</h1>
+<p>專題題目:</p>
+<p style="padding-left: 30px;">開源有限元素分析程式之應用研究</p>
+<p style="padding-left: 30px;">Application study on an open source finite element analysis program</p>
+<p>組員:</p>
+<p style="padding-left: 30px;">40723212</p>
+<p style="padding-left: 30px;">40723216</p>
+<p style="padding-left: 30px;">40723223</p>
+<p style="padding-left: 30px;">40723246</p>
+<hr/>
+<p>靜態網站: <a href="http://cad2.kmol.info">http://cad2.kmol.info</a> </p>
+<p></p><h2>參考資料</h2>
+<ol>
+<li><a href="https://github.com/Range-Software/range3">https://github.com/Range-Software/range3</a></li>
+<li><a href="https://dart.dev/articles/archive/numeric-computation">https://dart.dev/articles/archive/numeric-computation</a></li>
+<li><a href="https://pub.dev/packages/extended_math">https://pub.dev/packages/extended_math</a></li>
+<li><a href="https://itnext.io/building-a-calculator-app-in-flutter-824254704fe6">https://itnext.io/building-a-calculator-app-in-flutter-824254704fe6</a></li>
+<li><a href="https://github.com/mdecourse/flutter_demo_3d">https://github.com/mdecourse/flutter_demo_3d</a></li>
+<li><a href="https://github.com/mdecourse/flutter_cube">https://github.com/mdecourse/flutter_cube</a></li>
+<li><a href="https://github.com/mdecourse/Flutter-OBJ-3D-Viewer">https://github.com/mdecourse/Flutter-OBJ-3D-Viewer</a></li>
+<li><a href="https://mechanicalc.com/reference/finite-element-analysis">https://mechanicalc.com/reference/finite-element-analysis</a></li>
+<li><a href="https://github.com/liebeskind/feap">https://github.com/liebeskind/feap</a></li>
+<li><a href="https://github.com/mikolalysenko/femgl">https://github.com/mikolalysenko/femgl</a></li>
+<li><a href="https://konstrct.com/index.html">https://konstrct.com/index.html</a></li>
+</ol><h2>動態網站</h2>
+<p>設定步驟請參考:</p>
+<p><a href="https://github.com/mdecourse/project2020-1/issues/4">https://github.com/mdecourse/project2020-1/issues/4</a></p>
+<h4>CMSiMDE 執行所需模組</h4>
+<p style="padding-left: 30px;"><span>sudo pip3 install flask flask_cors bs4 lxml</span></p>
+<h4>uwsgi 所需模組</h4>
+<pre style="padding-left: 30px;"><code>sudo apt install uwsgi uwsgi-plugin-python3<br/><br/></code></pre>
+<pre style="padding-left: 30px;"><code>sudo pip3 install uwsgi</code></pre>
+<pre><code><br/></code>/etc/nginx/sites-available/default 附加 server 設定 <br/><br/></pre>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">server {
+ 
+    listen 9443 ssl;
+    listen [::]:9443 ssl;
+ 
+    # 指定 static 所在位置
+    location /static {
+	alias /home/yen/cad1_site/cmsimde/static/;
+    }
+ 
+    location / {
+	# 導入 uwsgi_params 設定參數
+	include uwsgi_params;
+	# 根目錄設為近端的 8080 port 
+	uwsgi_pass  127.0.0.1:8080;
+    }
+ 
+    ssl_certificate /home/yen/localhost.crt;
+    ssl_certificate_key /home/yen/localhost.key;
+    #ssl_certificate /etc/letsencrypt/live/cad1.kmol.info/fullchain.pem;
+    #ssl_certificate_key /etc/letsencrypt/live/cad1.kmol.info/privkey.pem;
+    ssl_session_timeout 5m;
+    ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+    ssl_prefer_server_ciphers on;
+    try_files $uri $uri/ =404;
+}</pre>
+<h4><br/>建立 self-signed key<br/><br/><span>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt</span><br/><br/>/home/yen/uwsgi_ini/uwsgi.ini<br/><br/></h4>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">[uwsgi]
+socket = :8080
+uid = yen
+gid = yen
+plugins-dir = /usr/lib/uwsgi/plugins/
+plugin = python3
+master = true
+process = 4
+threads = 2
+chdir = /home/yen/cad1_site/cmsimde
+wsgi-file = /home/yen/cad1_site/cmsimde/wsgi.py</pre>
+<h4><br/>uwsgi emperor 手動測試</h4>
+<h4><code>/usr/bin/uwsgi --emperor /home/yen/uwsgi_ini<br/><br/>防火牆設定<br/></code></h4>
+<p>先暫時關閉 ufw</p>
+<p>ufw disable</p>
+<p>允許設計系 IP v6 網段連線 9443 port</p>
+<p>ufw allow from 2001:288:6004:17::/32 to any port 9443</p>
+<p>其他網段主機一律]不准連線</p>
+<p>ufw deny 9443</p>
+<p>重新開啟 ufw 防火牆</p>
+<p>ufw enable</p>
+<pre><code><span>/etc/systemd/system 目錄中建立 cmsimde.service 檔案</span></code></pre>
+<pre></pre>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">[Unit]
+Description=uWSGI to serve CMSiMDE 
+After=network.target
+ 
+[Service]
+User=yen
+Group=yen
+WorkingDirectory=/home/yen/uwsgi_ini
+ExecStart=/usr/bin/uwsgi --emperor /home/yen/uwsgi_ini
+ 
+[Install]
+WantedBy=multi-user.target</pre>
+<pre></pre>
+<p>接著將 cmsimde 服務設為隨系統開機啟動:</p>
+<pre><code>sudo systemctl enable cmsimde
+</code></pre>
+<p>若要取消 cmsimde 服務隨系統開機啟動:</p>
+<pre><code>sudo systemctl disable cmsimde
+</code></pre>
+<p>手動啟動 cmsimde.service 服務</p>
+<pre><code>sudo systemctl start cmsimde
+</code></pre>
+<p>手動停止 cmsimde.service 服務</p>
+<pre><code>sudo systemctl stop cmsimde</code></pre>
+<pre><br/><br/></pre><h2>數位簽章</h2>
+<p><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></p>
+<p><a href="https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx">https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx</a> </p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository universe
+sudo apt-get update
+
+sudo apt-get install certbot python3-certbot-nginx
+
+sudo certbot certonly --nginx
+
+sudo certbot renew --dry-run</pre>
+<p></p><h1>參數式 CAD</h1>
+<h4>Solvesapce: 自行編譯, 可修改功能, Pyslvs-UI 應用核心</h4>
+<h4>Onshape: 雲端系統</h4>
+<h4>NX12: 高端參數 CAD</h4>
+<h4>Solidworks 2017: 最普遍使用參數 CAE</h4><h2>Solvespace</h2>
+<ol>
+<li>
+<p>編譯 Solvespace 的步驟, 需要先下載能夠<a href="https://drive.google.com/file/d/1AaOdJdZPNiD3YE5kgNcIrLK7ic0qsme1/view?usp=sharing" rel="nofollow">編譯 C++17 原始碼的可攜系統</a></p>
+</li>
+<li>
+<p>接著啟動可攜系統後, 以</p>
+</li>
+</ol>
+<p style="padding-left: 30px;">git clone --recurse-submodules<span> </span><a href="https://github.com/solvespace/solvespace.git">https://github.com/solvespace/solvespace.git</a></p>
+<p style="padding-left: 30px;">取下最新的程式碼, 以及子模組中的所有原始碼.</p>
+<ol start="3">
+<li>
+<p>接著要確定 portablegit\bin\ 與 Y:\msys64\usr\bin\ 目錄中的 sh.exe 都改名為 sh_rename_for_compiling_solvespace.exe</p>
+</li>
+<li>
+<p>由於上述可攜系統已經安裝 Msys2 與 CMAKE, 因此只需要在命令列中進入 solvespace 原始碼目錄, 以 mkdir 建立 build 目錄, 然後 cd build 後, 執行:</p>
+</li>
+</ol>
+<p style="padding-left: 30px;">cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</p>
+<p style="padding-left: 30px;">以便建立所需的 Makefile</p>
+<ol start="5">
+<li>然後再利用</li>
+</ol>
+<p style="padding-left: 30px;">make</p>
+<p>完成所有程式碼的編譯.</p>
+<ol start="6">
+<li>最後 solvespace.exe 已經位於 solvespace/build/bin 目錄中, 只要再從 Y:\msys64\mingw64\bin\libwinpthread-1.dll 複製 dll 檔案放入 bin 目錄, 就可以啟動 solvespace.exe 進行參數零件, 轉出 stl 檔案 (為 binary stl 格式) 後, 就可以導入 Range3 進行後續的 CAE 分析.</li>
+</ol>
+<p><span>from https://drive.google.com/file/d/1AaOdJdZPNiD3YE5kgNcIrLK7ic0qsme1/view?usp=sharing get wcm2020_project</span></p>
+<p>about cmake:<span> </span><a href="https://cmake.org/" rel="nofollow">https://cmake.org/</a></p>
+<p>about msys2:<span> </span><a href="https://www.msys2.org/" rel="nofollow">https://www.msys2.org/</a></p>
+<p>about solvespace:<span> </span><a href="https://github.com/solvespace/solvespace">https://github.com/solvespace/solvespace</a></p>
+<p>install cmake</p>
+<pre><code>pacman -S mingw-w64-x86_64-cmake
+</code></pre>
+<p>rename Y:\msys64\usr\bin\sh.exe to sh_renamed_for_compiling_solvespace.exe</p>
+<p>build solvespace.exe</p>
+<p>use mingw64.exe</p>
+<pre><code>cd /y/tmp/cad_ex
+
+cd solvespace
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release
+make
+</code></pre>
+<p>need Y:\msys64\mingw64\bin\libwinpthread-1.dll to execute solvespace.exe</p>
+<hr/>
+<p>根據上述步驟完成的編譯專案檔案位於:</p>
+<p><a href="https://drive.google.com/file/d/1UBaq2Lmc9q_vtQYVkkZ7_wlBvStDfKUt/view?usp=sharing" rel="nofollow">project2020-2_compile_solvespace.7z</a></p><h1>FEM theory</h1>
+<p><a href="/downloads/FEA_Theory.pdf">FEA Theory.pdf</a></p>
+<p><a href="/downloads/introfem.pdf">Intro to FEM.pdf</a></p>
+<p><a href="/downloads/KJB_finite_element_procedures.pdf">Finite element procedures.pdf</a></p>
+<p>mesh 網格化:</p>
+<p style="padding-left: 30px;"><a href="/downloads/tetgen_manual.pdf">tetgen_manual.pdf</a></p>
+<p style="padding-left: 30px;"><a href="http://wias-berlin.de/software/index.jsp?id=TetGen&amp;lang=1">tetgen.org</a> (<a href="https://github.com/ufz/tetgen">https://github.com/ufz/tetgen</a>)</p>
+<p style="padding-left: 30px;">Python interface to tetgen: <a href="https://github.com/pyvista/tetgen">https://github.com/pyvista/tetgen</a></p>
+<p style="padding-left: 30px;"><a href="https://depositonce.tu-berlin.de/handle/11303/5104">Three Dimensional Boundary Conforming Delaunay Mesh Generation</a> - Ph.D. dissertation</p><h2>Range3</h2>
+<ol>
+<li>啟動 22G 可攜程式系統後, 假設要將 Range3 的原始碼 clone 到 y:\project2020 目錄中, 在命令列中, 從 y:\ 目錄 mkdir project2020, 並 cd project2020 後:</li>
+</ol>
+<p style="padding-left: 30px;">git clone --recurse-submodules<span> </span><a href="https://github.com/Range-Software/range3.git">https://github.com/Range-Software/range3.git</a></p>
+<p style="padding-left: 30px;">雖然 Range3 並無 submodules, 但仍以 --recurse-submodules 取下原始碼.</p>
+<ol start="2">
+<li>以滑鼠進入 y:\msys64\ 目錄中, 點擊 mingw64.exe 帶出 shell 命令視窗.</li>
+<li>在 shell 中, 以 cd /y/project2020/range3 進入 range3 程式碼目錄.</li>
+</ol>
+<ol start="4">
+<li>在 range3 目錄中執行:</li>
+</ol>
+<p style="padding-left: 30px;">./scripts/build.sh --clean &amp;&amp; ./scripts/create_package.sh</p>
+<p>就可完成編譯. 編譯完成的檔案為 Y:\project2020\range3\build-Release\packages\range-3.2.4.tar.gz  解開壓縮檔案後, 將可攜系統中的 range3_msys2_dlls_platforms.7z 解開所有 .dll 與對應目錄到 bin (編譯完成後只有 Range.exe 與 RangeSolver.exe 兩個檔案), 就可以執行 Range.exe 進行後續的 CAE 分析.</p>
+<ol start="5">
+<li>上述步驟所完成的目錄位於<span> </span><a href="https://drive.google.com/file/d/1cyVa8BG7GOBdGj1a22Po8MfD6WScmO1g/view?usp=sharing" rel="nofollow">project2020-2_compile_range3.7z</a></li>
+</ol>
+<hr/>
+<p><span>start Y:\msys64\mingw64.exe</span></p>
+<p>cd \y\tmp\fem_ex\range3</p>
+<p>./scripts/build.sh --clean &amp;&amp; ./scripts/create_package.sh</p>
+<hr/>
+<h4>其他開源 CAE</h4>
+<p style="padding-left: 30px;"><a href="https://en.z88.de/" rel="nofollow">https://en.z88.de/</a></p>
+<p style="padding-left: 30px;"><a href="https://su2code.github.io/" rel="nofollow">https://su2code.github.io/</a></p>
+<p style="padding-left: 30px;"><a href="https://github.com/FreeFem">https://github.com/FreeFem</a></p><h2>Ngsolve</h2>
+<p><a href="https://ngsolve.org/">https://ngsolve.org/</a></p>
+<p><a href="/downloads/from_comsol_to_ngsolve.pdf">From Comsol to Ngsolve.pdf</a></p>
+<p><a href="/downloads/autoShapeNGSolve_pre.pdf">AutoShape_NGsolve.pdf</a></p><h1>應用範例</h1>
+<p><img alt="" height="356" src="/images/image-Applied_temperature_on_volume.png" width="600"/></p>
+<p><img alt="" height="900" src="/images/image-Adaptive_mesh-example.png" width="600"/></p>
+<p><img alt="" height="511" src="/images/image-iso_surface.png" width="600"/></p>
+<p><img alt="" height="500" src="/images/image-vector_field.png" width="600"/></p>
+<h4></h4>
+<h4></h4><h1>CMSiMDE</h1>
+<p><a href="https://websitesetup.org/bootstrap-tutorial-for-beginners/">https://websitesetup.org/bootstrap-tutorial-for-beginners/</a></p>
+<p><a href="https://colorlib.com/wp/themes/travelify/">https://colorlib.com/wp/themes/travelify/</a> </p>
+<p><a href="https://github.com/puikinsh/travelify">https://github.com/puikinsh/travelify</a></p>
+<p></p>
+<p></p>
