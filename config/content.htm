@@ -242,7 +242,10 @@ make
 <p>將 cad2_site 搬到 /home/cad2 而 cad2 只是 group</p>
 <p>以 sudo groupadd cad2 建立 cad2 group</p>
 <p>以 sudo adduser user1 cad2 將 user1 納入 cad2 group</p>
+<p>cd /home</p>
+<p>sudo chmod -R yen:cad2 cad2 將 cad2 以下所有資料的 owner 設為 yen, group 設為 cad2</p>
 <p>sudo systemctl restart cmsimde 重新啟動 cmsimde 服務</p>
-<p>uwsgi.ini 中啟用的 user and group 必須與 cad2_site 資料結構一致</p>
+<p>uwsgi.ini 中啟用的 user and group 必須與 cad2_site 資料結構一致, 也就是設為 yen:cad2</p>
+<p>如此只要用戶屬於 cad2 群組的用戶都能夠登入後, 進入 /home/cad2/cad2_site 執行 git 指令</p>
 <p></p>
 <p></p>
