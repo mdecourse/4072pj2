@@ -1,4 +1,50 @@
-<h1>About</h1>
+<h1>專題實作流程</h1>
+<h2>1DFEM</h2>
+<p>先從了解 1D boundary value differential equation 的數值分析解法開始</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html </a></p>
+<p><b>FEM1D</b>, a Python program which applies the finite element method (FEM) to a 1D linear two point boundary value problem (BVP), using piecewise linear basis functions.</p>
+<p>The BVP to be solved is:</p>
+<pre>        -u'' = x * ( x + 3 ) * exp ( x )  over the interval 0 &lt; x &lt; 1
+        u(0) = 0.0
+        u(1) = 0.0</pre>
+<p>The exact solution is:</p>
+<pre>        u(x) = x * ( 1 - x ) * exp ( x )</pre>
+<p>A version of the finite element method is used. Six equally spaced nodes are defined, from 0.0 to 1.0, dividing the interval into 5 elements. At node I, we associate a "hat" function, or piecewise linear basis function, PSI(I)(X), which has the value 1 at that node, is 0 at all other nodes.</p>
+<p>We look for an approximate solution to our problem of the form</p>
+<pre>        UH(X) = sum ( 1 &lt;= I &lt;= 6 ) C(I) * PSI(I,X)</pre>
+<p><span>so that now the problem becomes the determination of the unknown coefficients C.</span></p>
+<p>We take the original BVP, multiply by test function PSI(J,X), integrate over the region, and apply integration by parts, to obtain a linear system of the form</p>
+<pre>        A * C = F</pre>
+<p><span>We modify the first and last rows of the linear system to enforce the boundary conditions, then solve to determine the values of C.</span></p>
+<h4>Licensing:</h4>
+<p>The computer code and data files described and made available on this web page are distributed under<span> </span><a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a></p>
+<h4>Languages:</h4>
+<p><b>FEM1D</b><span> </span>is available in<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/c_src/fem1d/fem1d.html">a C version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/cpp_src/fem1d/fem1d.html">a C++ version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/f_src/fem1d/fem1d.html">a FORTRAN90 version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/m_src/fem1d/fem1d.html">a MATLAB version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">a Python version.</a></p>
+<h4>Related Data and Programs:</h4>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">FEM1D_BVP_LINEAR</a>, a Python program which applies the finite element method (FEM), with piecewise linear elements, to a two point boundary value problem (BVP) in one spatial dimension, and compares the computed and exact solutions with the L2 and seminorm errors.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fd1d_heat_explicit/fd1d_heat_explicit.html">FD1D_HEAT_EXPLICIT</a>, a Python library which uses the finite difference method (FDM) and explicit time stepping to solve the time dependent heat equation in 1D.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/data/fem1d/fem1d.html">FEM1D</a>, a data directory which contains examples of 1D FEM files, three text files that describe a 1D finite element model;</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">FEM1D_BVP_QUADRATIC</a>, a Python program which applies the finite element method (FEM), with piecewise quadratic elements, to a two point boundary value problem (BVP) in one spatial dimension.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_classes/fem1d_classes.html">FEM1D_CLASSES</a>, a Python library which defines classes useful for solving a boundary value problem (BVP) of the form u''+2u'+u=f in 1 spatial dimension, using the finite element method (FEM), by Mike Sussman.</p>
+<h4>Reference:</h4>
+<p></p>
+<ol>
+<li>Gilbert Strang, George Fix,<br/>An Analysis of the Finite Element Method,<br/>Cambridge, 1973,<br/>ISBN: 096140888X,<br/>LC: TA335.S77.</li>
+</ol>
+<p></p>
+<h4>Source Code:</h4>
+<p></p>
+<ul>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.py">fem1d.py</a>, the source code.</li>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.sh">fem1d.sh</a>, commands to compile the source code.</li>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.txt">fem1d.txt</a>, the output file.</li>
+</ul>
+<p></p>
+<p></p>
+<ul>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.png">fem1d.png</a>, a plot comparing the computed and exact solutions.</li>
+</ul>
+<p></p><h1>About</h1>
 <p>專題題目:</p>
 <p style="padding-left: 30px;">開源有限元素分析程式之應用研究</p>
 <p style="padding-left: 30px;">Application study on an open source finite element analysis program</p>
@@ -11,8 +57,7 @@
 <p>靜態網站: <a href="http://cad2.kmol.info">http://cad2.kmol.info</a> </p>
 <p><a href="/downloads/table_of_greek_letters.pdf">table_of_greek_letters.pdf</a></p>
 <p>Mathmatical Symbols: <a href="https://en.wikipedia.org/wiki/Table_of_mathematical_symbols_by_introduction_date">https://en.wikipedia.org/wiki/Table_of_mathematical_symbols_by_introduction_date</a></p>
-<p></p>
-<h2>參考資料</h2>
+<p></p><h2>參考資料</h2>
 <ol>
 <li><a href="https://github.com/Range-Software/range3">https://github.com/Range-Software/range3</a></li>
 <li><a href="https://dart.dev/articles/archive/numeric-computation">https://dart.dev/articles/archive/numeric-computation</a></li>
@@ -278,7 +323,8 @@ make
 <li>與其他專利摺疊椅或產品進行比較分析</li>
 <li>利用 Pyslvs-UI 嘗試進行迴避設計</li>
 </ol>
-<p><a href="/downloads/Collapsible Chair.pdf">Collapsible Chair.pdf</a></p><h2>Folding Funiture</h2>
+<p><a href="/downloads/Collapsible Chair.pdf">Collapsible Chair.pdf</a></p>
+<p><a href="/downloads/Innovative Design of the Combined Rocking Horse Toy and Folding Chair for Children.pdf">Innovative Design of the Combined Rocking Horse Toy and Folding Chair for Children.pdf</a></p><h2>Folding Funiture</h2>
 <p><a href="/downloads/Foldabilizing Furniture.pdf">Foldabilizing Furniture.pdf</a></p>
 <p><a href="/downloads/ANALYSIS  OF  JAPANESE  AND  FINNISH  FURNITURE DESIGN.pdf">ANALYSIS OF JAPANESE AND FINNISH FURNITURE DESIGN.pdf</a></p><h1>Julia</h1>
 <p>Julia 是 2012 年出現的高階程式語言, 可以將其視為 21 世紀 Fortran, Python 與 Matlab 合體的新一代運算導向語言.</p>

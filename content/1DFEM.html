@@ -1,0 +1,237 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>Application of Open-srouce FEM programs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+<script type="text/javascript">
+if ((location.href.search(/http:/) != -1) && (location.href.search(/login/) != -1)) window.location= 'https://' + location.host + location.pathname + location.search;
+</script></head><body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>開源有限元素分析程式之應用研究</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">開源有限元素分析程式之應用研究</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='專題實作流程.html'>專題實作流程</a><ul class='dropdown'><li><a href='1DFEM.html'>1DFEM</a></li></ul><li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='參考資料.html'>參考資料</a><li><a href='動態網站.html'>動態網站</a><li><a href='數位簽章.html'>數位簽章</a></li></ul><li><a href='專利搜尋.html'>專利搜尋</a><li class='has-children'><a href='參數式 CAD.html'>參數式 CAD</a><ul class='dropdown'><li><a href='Solvespace.html'>Solvespace</a></li></ul><li class='has-children'><a href='FEM theory.html'>FEM theory</a><ul class='dropdown'><li class='has-children'><a href='Range3.html'>Range3</a><ul class='dropdown'><li><a href='Range3 Tutorial.html'>Range3 Tutorial</a></li></ul><li><a href='Ngsolve.html'>Ngsolve</a></li></ul><li class='has-children'><a href='應用範例.html'>應用範例</a><ul class='dropdown'><li><a href='Folding Chair.html'>Folding Chair</a><li><a href='Folding Funiture.html'>Folding Funiture</a></li></ul><li><a href='Julia.html'>Julia</a><li><a href='CMSiMDE.html'>CMSiMDE</a><li><a href='test.html'>test</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">專題實作流程 << <a href='專題實作流程.html'>Previous</a> <a href='About.html'>Next</a> >> About<br /><h1>1DFEM</h1>
+<p>先從了解 1D boundary value differential equation 的數值分析解法開始</p>
+<p>參考書:</p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-642-33287-6">https://link.springer.com/book/10.1007/978-3-642-33287-6 </a></p>
+<p style="padding-left: 30px;"><a href="https://hplgit.github.io/fem-book/doc/pub/book/pdf/fem-book-4print.pdf">https://hplgit.github.io/fem-book/doc/pub/book/pdf/fem-book-4print.pdf </a></p>
+<p>程式碼:</p>
+<p style="padding-left: 30px;"><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html </a></p>
+<p style="padding-left: 30px;"><a href="./../downloads/1d_fem_linear_c_py_ex.7z">1d_fem_linear_c_py_ex.7z</a></p>
+<p><b>FEM1D</b>, a Python program which applies the finite element method (FEM) to a 1D linear two point boundary value problem (BVP), using piecewise linear basis functions.</p>
+<p>The BVP to be solved is:</p>
+<pre>        -u'' = x * ( x + 3 ) * exp ( x )  over the interval 0 &lt; x &lt; 1
+        u(0) = 0.0
+        u(1) = 0.0</pre>
+<p>The exact solution is:</p>
+<pre>        u(x) = x * ( 1 - x ) * exp ( x )</pre>
+<p>A version of the finite element method is used. Six equally spaced nodes are defined, from 0.0 to 1.0, dividing the interval into 5 elements. At node I, we associate a "hat" function, or piecewise linear basis function, PSI(I)(X), which has the value 1 at that node, is 0 at all other nodes.</p>
+<p>We look for an approximate solution to our problem of the form</p>
+<pre>        UH(X) = sum ( 1 &lt;= I &lt;= 6 ) C(I) * PSI(I,X)</pre>
+<p><span>so that now the problem becomes the determination of the unknown coefficients C.</span></p>
+<p>We take the original BVP, multiply by test function PSI(J,X), integrate over the region, and apply integration by parts, to obtain a linear system of the form</p>
+<pre>        A * C = F</pre>
+<p><span>We modify the first and last rows of the linear system to enforce the boundary conditions, then solve to determine the values of C.</span></p>
+<h4>Licensing:</h4>
+<p>The computer code and data files described and made available on this web page are distributed under<span> </span><a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a></p>
+<h4>Languages:</h4>
+<p><b>FEM1D</b><span> </span>is available in<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/c_src/fem1d/fem1d.html">a C version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/cpp_src/fem1d/fem1d.html">a C++ version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/f_src/fem1d/fem1d.html">a FORTRAN90 version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/m_src/fem1d/fem1d.html">a MATLAB version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">a Python version.</a></p>
+<h4>Related Data and Programs:</h4>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">FEM1D_BVP_LINEAR</a>, a Python program which applies the finite element method (FEM), with piecewise linear elements, to a two point boundary value problem (BVP) in one spatial dimension, and compares the computed and exact solutions with the L2 and seminorm errors.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fd1d_heat_explicit/fd1d_heat_explicit.html">FD1D_HEAT_EXPLICIT</a>, a Python library which uses the finite difference method (FDM) and explicit time stepping to solve the time dependent heat equation in 1D.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/data/fem1d/fem1d.html">FEM1D</a>, a data directory which contains examples of 1D FEM files, three text files that describe a 1D finite element model;</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">FEM1D_BVP_QUADRATIC</a>, a Python program which applies the finite element method (FEM), with piecewise quadratic elements, to a two point boundary value problem (BVP) in one spatial dimension.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_classes/fem1d_classes.html">FEM1D_CLASSES</a>, a Python library which defines classes useful for solving a boundary value problem (BVP) of the form u''+2u'+u=f in 1 spatial dimension, using the finite element method (FEM), by Mike Sussman.</p>
+<h4>Reference:</h4>
+<p></p>
+<ol>
+<li>Gilbert Strang, George Fix,<br/>An Analysis of the Finite Element Method,<br/>Cambridge, 1973,<br/>ISBN: 096140888X,<br/>LC: TA335.S77.</li>
+</ol>
+<p></p>
+<h4>Source Code:</h4>
+<p></p>
+<ul>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.py">fem1d.py</a>, the source code.</li>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.sh">fem1d.sh</a>, commands to compile the source code.</li>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.txt">fem1d.txt</a>, the output file.</li>
+</ul>
+<p></p>
+<p></p>
+<ul>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.png">fem1d.png</a>, a plot comparing the computed and exact solutions.</li>
+</ul>
+<p></p><br />專題實作流程 << <a href='專題實作流程.html'>Previous</a> <a href='About.html'>Next</a> >> About</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
