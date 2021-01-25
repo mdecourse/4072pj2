@@ -1,97 +1,7 @@
-<h1>專題實作流程</h1>
-<p>討論區: <a href="https://github.com/mdecourse/4072pj2/discussions">https://github.com/mdecourse/4072pj2/discussions</a></p>
-<p>Finite Element Analysis (有限元素分析) 是一種<span style="background-color: #ffff00;">數值分析方法</span>可用來<span style="background-color: #ffff00;">解系統的微分方程式</span>, 主要是利用<span style="background-color: #ffff00;">數學近似</span>的方法模擬<span style="background-color: #ffff00;">真實物理系統在各種受力或環境邊界條件下的反應情形</span>. 方法架構是利用<span style="background-color: #ffff00;">簡單且相互作用的元素單元</span>互相結合運算下, 就可以利用<span style="background-color: #ffff00;">有限數量</span>的未知量逼近<span style="background-color: #ffff00;">無限</span>未知量的真實系統.</p>
-<p><a href="https://en.wikipedia.org/wiki/Finite_element_method">Finite Element Method</a></p>
-<p>解微分方程式的其他常見方法:</p>
-<p><a href="https://en.wikipedia.org/wiki/Finite_difference_method">finite difference method</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Boundary_element_method">boundary element method</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Finite_volume_method">finite volume method</a></p>
-<p></p><h2>1DFEM</h2>
-<p>先從了解 1D boundary value differential equation 的數值分析解法開始</p>
-<p>參考書:</p>
-<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-642-33287-6">https://link.springer.com/book/10.1007/978-3-642-33287-6 </a></p>
-<p style="padding-left: 30px;"><a href="https://hplgit.github.io/fem-book/doc/pub/book/pdf/fem-book-4print.pdf">https://hplgit.github.io/fem-book/doc/pub/book/pdf/fem-book-4print.pdf </a></p>
-<p>程式碼:</p>
-<p style="padding-left: 30px;"><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html </a></p>
-<p style="padding-left: 30px;"><a href="/downloads/1d_fem_linear_c_py_ex.7z">1d_fem_linear_c_py_ex.7z</a></p>
-<p><b>FEM1D</b>, a Python program which applies the finite element method (FEM) to a 1D linear two point boundary value problem (BVP), using piecewise linear basis functions.</p>
-<p>The BVP to be solved is:</p>
-<pre>        -u'' = x * ( x + 3 ) * exp ( x )  over the interval 0 &lt; x &lt; 1
-        u(0) = 0.0
-        u(1) = 0.0</pre>
-<p>The exact solution is:</p>
-<pre>        u(x) = x * ( 1 - x ) * exp ( x )</pre>
-<p>A version of the finite element method is used. Six equally spaced nodes are defined, from 0.0 to 1.0, dividing the interval into 5 elements. At node I, we associate a "hat" function, or piecewise linear basis function, PSI(I)(X), which has the value 1 at that node, is 0 at all other nodes.</p>
-<p>We look for an approximate solution to our problem of the form</p>
-<pre>        UH(X) = sum ( 1 &lt;= I &lt;= 6 ) C(I) * PSI(I,X)</pre>
-<p><span>so that now the problem becomes the determination of the unknown coefficients C.</span></p>
-<p>We take the original BVP, multiply by test function PSI(J,X), integrate over the region, and apply integration by parts, to obtain a linear system of the form</p>
-<pre>        A * C = F</pre>
-<p><span>We modify the first and last rows of the linear system to enforce the boundary conditions, then solve to determine the values of C.</span></p>
-<h4>Licensing:</h4>
-<p>The computer code and data files described and made available on this web page are distributed under<span> </span><a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a></p>
-<h4>Languages:</h4>
-<p><b>FEM1D</b><span> </span>is available in<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/c_src/fem1d/fem1d.html">a C version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/cpp_src/fem1d/fem1d.html">a C++ version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/f_src/fem1d/fem1d.html">a FORTRAN90 version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/m_src/fem1d/fem1d.html">a MATLAB version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">a Python version.</a></p>
-<h4>Related Data and Programs:</h4>
-<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">FEM1D_BVP_LINEAR</a>, a Python program which applies the finite element method (FEM), with piecewise linear elements, to a two point boundary value problem (BVP) in one spatial dimension, and compares the computed and exact solutions with the L2 and seminorm errors.</p>
-<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fd1d_heat_explicit/fd1d_heat_explicit.html">FD1D_HEAT_EXPLICIT</a>, a Python library which uses the finite difference method (FDM) and explicit time stepping to solve the time dependent heat equation in 1D.</p>
-<p><a href="https://people.sc.fsu.edu/~jburkardt/data/fem1d/fem1d.html">FEM1D</a>, a data directory which contains examples of 1D FEM files, three text files that describe a 1D finite element model;</p>
-<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">FEM1D_BVP_QUADRATIC</a>, a Python program which applies the finite element method (FEM), with piecewise quadratic elements, to a two point boundary value problem (BVP) in one spatial dimension.</p>
-<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_classes/fem1d_classes.html">FEM1D_CLASSES</a>, a Python library which defines classes useful for solving a boundary value problem (BVP) of the form u''+2u'+u=f in 1 spatial dimension, using the finite element method (FEM), by Mike Sussman.</p>
-<h4>Reference:</h4>
-<p></p>
-<ol>
-<li>Gilbert Strang, George Fix,<br/>An Analysis of the Finite Element Method,<br/>Cambridge, 1973,<br/>ISBN: 096140888X,<br/>LC: TA335.S77.</li>
-</ol>
-<p></p>
-<h4>Source Code:</h4>
-<p></p>
-<ul>
-<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.py">fem1d.py</a>, the source code.</li>
-<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.sh">fem1d.sh</a>, commands to compile the source code.</li>
-<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.txt">fem1d.txt</a>, the output file.</li>
-</ul>
-<p></p>
-<p></p>
-<ul>
-<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.png">fem1d.png</a>, a plot comparing the computed and exact solutions.</li>
-</ul>
-<h2>Matlab</h2>
-<p><a href="http://www.spacar.nl/wiki/doku.php?id=start">http://www.spacar.nl/wiki/doku.php?id=start</a></p>
-<p><a href="/downloads/spacar_man2009.pdf">spacar_man2009.pdf</a></p>
-<p><a href="/downloads/protmodslides2015.pdf">protmodslides2015.pdf</a></p>
-<p><a href="/downloads/protmod2014.pdf">protmod2014.pdf</a></p>
-<p></p>
-<p><a href="https://github.com/lyc102/ifem">https://github.com/lyc102/ifem</a></p>
-<p><a href="https://www.math.uci.edu/~chenlong/programming.html">https://www.math.uci.edu/~chenlong/programming.html</a></p>
-<p></p>
-<p><a href="https://github.com/JWock82/PyNite">https://github.com/JWock82/PyNite</a></p>
-<p><a href="https://www.eng-tips.com/viewthread.cfm?qid=474433">https://www.eng-tips.com/viewthread.cfm?qid=474433</a> </p><h2>abaqus</h2>
-<p>利用 <a href="https://www.standoutvitae.com/article/gautampuri0161663/abaqus-basics/">https://www.standoutvitae.com/article/gautampuri0161663/abaqus-basics/</a> 中的範例分別在 Abaqus, Range3, Ansys, Comsol, NGSolve 中進行分析比較其結果.</p>
-<p>列出有限元素分析法的分析原理並利用上述範例延伸至摺疊椅的強度分析.</p>
-<p>27011_37</p>
-<p><a href="https://www.standoutvitae.com/article/gautampuri050534/abaqus-fea-tutorial-series/">https://www.standoutvitae.com/article/gautampuri050534/abaqus-fea-tutorial-series/</a></p>
-<p><a href="http://130.149.89.49:2080/v6.14/pdf_books/index.pdf">http://130.149.89.49:2080/v6.14/pdf_books/index.pdf</a></p>
-<p><a href="/downloads/The Secondary Development of ABAQUS by using Python and the Application of the Advanced GA.pdf">The Secondary Development of ABAQUS by using Pythonand the Application of the Advanced GA.pdf</a></p>
-<p><a href="/downloads/ABAQUS_python_tutorial.pdf">ABAQUS_python_tutorial.pdf</a></p>
-<p><a href="/downloads/Abaqus_SCRIPT_USER.pdf">Abaqus_SCRIPT_USER.pdf</a></p>
-<p><a href="/downloads/learnabaqusscriptinonehour.pdf">learnabaqusscriptinonehour.pdf</a></p>
-<p><a href="/downloads/Python Scripts for Abaqus.pdf">Python Scripts for Abaqus.pdf</a></p>
-<p><a href="/downloads/abaqus_scripting-summary.pdf">abaqus_scripting-summary.pdf</a></p>
-<p><a href="/downloads/lsight_tip1805_102.pdf">lsight_tip1805_102.pdf</a></p>
-<p><a href="/downloads/Finite ElementModelingwith  Abaqusand Pythonfor Thermal andStress Analysis.pdf">Finite ElementModelingwith Abaqusand Pythonfor Thermal andStress Analysis.pdf</a></p>
-<p><a href="/downloads/A Pragmatic Introduction to theFinite Element Methodfor Thermal and Stress Analysis.pdf">A Pragmatic Introduction to theFinite Element Methodfor Thermal and Stress Analysis.pdf</a></p>
-<p><a href="http://hogwarts.ucsd.edu/~pkrysl/faesor/#downloads">http://hogwarts.ucsd.edu/~pkrysl/faesor/#downloads</a></p>
-<p><a href="/downloads/DimensionalModelReductioninNon-linearFiniteElementDynamicsofSolidsandStructures.pdf">DimensionalModelReductioninNon-linearFiniteElementDynamicsofSolidsandStructures.pdf</a></p>
-<p><a href="/downloads/軌道絕緣接頭之應力數值分析.pdf">軌道絕緣接頭之應力數值分析.pdf</a></p>
-<p><a href="/downloads/Abaqus 6.14 EXAMPLES_1.pdf">Abaqus 6.14 EXAMPLES_1.pdf</a></p>
-<p><a href="/downloads/Abaqus 6.14 EXAMPLES_2.pdf">Abaqus 6.14 EXAMPLES_2.pdf</a></p><h2>FEM 應用</h2>
-<p><a href="/downloads/fem_ref.7z">fem_ref.7z</a></p>
-<p></p>
-<p></p><h1>About</h1>
+<h1>About</h1>
 <p>專題題目:</p>
-<p style="padding-left: 30px;">開源有限元素分析程式之應用研究</p>
-<p style="padding-left: 30px;">Application study on an open source finite element analysis program</p>
+<p style="padding-left: 30px;">有限元素分析法之應用研究 - 以 Abaqus, Range3 與 NGSolve 為例</p>
+<p style="padding-left: 30px;">Application study on finite element method - taking Abaqus, Range3 and NGSolve as examples</p>
 <p>討論區: <a href="https://github.com/mdecourse/4072pj2/discussions">https://github.com/mdecourse/4072pj2/discussions</a></p>
 <p>組員:</p>
 <p style="padding-left: 30px;">40723212</p>
@@ -99,7 +9,6 @@
 <p style="padding-left: 30px;">40723223</p>
 <p style="padding-left: 30px;">40723246</p>
 <hr/>
-<p>靜態網站: <a href="http://cad2.kmol.info">http://cad2.kmol.info</a> </p>
 <p><a href="/downloads/table_of_greek_letters.pdf">table_of_greek_letters.pdf</a></p>
 <p>Mathmatical Symbols: <a href="https://en.wikipedia.org/wiki/Table_of_mathematical_symbols_by_introduction_date">https://en.wikipedia.org/wiki/Table_of_mathematical_symbols_by_introduction_date</a></p>
 <p></p><h2>參考資料</h2>
@@ -215,20 +124,111 @@ sudo certbot certonly --nginx
 
 sudo certbot renew --dry-run</pre>
 <p></p>
-<h1>專利搜尋</h1>
+<h1>專題流程</h1>
+<p>討論區: <a href="https://github.com/mdecourse/4072pj2/discussions">https://github.com/mdecourse/4072pj2/discussions</a></p>
+<p>Finite Element Analysis (有限元素分析) 是一種<span style="background-color: #ffff00;">數值分析方法</span>可用來<span style="background-color: #ffff00;">解系統的微分方程式</span>, 主要是利用<span style="background-color: #ffff00;">數學近似</span>的方法模擬<span style="background-color: #ffff00;">真實物理系統在各種受力或環境邊界條件下的反應情形</span>. 方法架構是利用<span style="background-color: #ffff00;">簡單且相互作用的元素單元</span>互相結合運算下, 就可以利用<span style="background-color: #ffff00;">有限數量</span>的未知量逼近<span style="background-color: #ffff00;">無限</span>未知量的真實系統.</p>
+<p><a href="https://en.wikipedia.org/wiki/Finite_element_method">Finite Element Method</a></p>
+<p>解微分方程式的其他常見方法:</p>
+<p><a href="https://en.wikipedia.org/wiki/Finite_difference_method">finite difference method</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Boundary_element_method">boundary element method</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Finite_volume_method">finite volume method</a></p>
+<p></p><h2>1DFEM</h2>
+<p>先從了解 1D boundary value differential equation 的數值分析解法開始</p>
+<p>參考書:</p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-642-33287-6">https://link.springer.com/book/10.1007/978-3-642-33287-6 </a></p>
+<p style="padding-left: 30px;"><a href="https://hplgit.github.io/fem-book/doc/pub/book/pdf/fem-book-4print.pdf">https://hplgit.github.io/fem-book/doc/pub/book/pdf/fem-book-4print.pdf </a></p>
+<p>程式碼:</p>
+<p style="padding-left: 30px;"><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html </a></p>
+<p style="padding-left: 30px;"><a href="/downloads/1d_fem_linear_c_py_ex.7z">1d_fem_linear_c_py_ex.7z</a></p>
+<p><b>FEM1D</b>, a Python program which applies the finite element method (FEM) to a 1D linear two point boundary value problem (BVP), using piecewise linear basis functions.</p>
+<p>The BVP to be solved is:</p>
+<pre>        -u'' = x * ( x + 3 ) * exp ( x )  over the interval 0 &lt; x &lt; 1
+        u(0) = 0.0
+        u(1) = 0.0</pre>
+<p>The exact solution is:</p>
+<pre>        u(x) = x * ( 1 - x ) * exp ( x )</pre>
+<p>A version of the finite element method is used. Six equally spaced nodes are defined, from 0.0 to 1.0, dividing the interval into 5 elements. At node I, we associate a "hat" function, or piecewise linear basis function, PSI(I)(X), which has the value 1 at that node, is 0 at all other nodes.</p>
+<p>We look for an approximate solution to our problem of the form</p>
+<pre>        UH(X) = sum ( 1 &lt;= I &lt;= 6 ) C(I) * PSI(I,X)</pre>
+<p><span>so that now the problem becomes the determination of the unknown coefficients C.</span></p>
+<p>We take the original BVP, multiply by test function PSI(J,X), integrate over the region, and apply integration by parts, to obtain a linear system of the form</p>
+<pre>        A * C = F</pre>
+<p><span>We modify the first and last rows of the linear system to enforce the boundary conditions, then solve to determine the values of C.</span></p>
+<h4>Licensing:</h4>
+<p>The computer code and data files described and made available on this web page are distributed under<span> </span><a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a></p>
+<h4>Languages:</h4>
+<p><b>FEM1D</b><span> </span>is available in<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/c_src/fem1d/fem1d.html">a C version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/cpp_src/fem1d/fem1d.html">a C++ version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/f_src/fem1d/fem1d.html">a FORTRAN90 version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/m_src/fem1d/fem1d.html">a MATLAB version</a><span> </span>and<span> </span><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.html">a Python version.</a></p>
+<h4>Related Data and Programs:</h4>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">FEM1D_BVP_LINEAR</a>, a Python program which applies the finite element method (FEM), with piecewise linear elements, to a two point boundary value problem (BVP) in one spatial dimension, and compares the computed and exact solutions with the L2 and seminorm errors.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fd1d_heat_explicit/fd1d_heat_explicit.html">FD1D_HEAT_EXPLICIT</a>, a Python library which uses the finite difference method (FDM) and explicit time stepping to solve the time dependent heat equation in 1D.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/data/fem1d/fem1d.html">FEM1D</a>, a data directory which contains examples of 1D FEM files, three text files that describe a 1D finite element model;</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">FEM1D_BVP_QUADRATIC</a>, a Python program which applies the finite element method (FEM), with piecewise quadratic elements, to a two point boundary value problem (BVP) in one spatial dimension.</p>
+<p><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d_classes/fem1d_classes.html">FEM1D_CLASSES</a>, a Python library which defines classes useful for solving a boundary value problem (BVP) of the form u''+2u'+u=f in 1 spatial dimension, using the finite element method (FEM), by Mike Sussman.</p>
+<h4>Reference:</h4>
+<p></p>
+<ol>
+<li>Gilbert Strang, George Fix,<br/>An Analysis of the Finite Element Method,<br/>Cambridge, 1973,<br/>ISBN: 096140888X,<br/>LC: TA335.S77.</li>
+</ol>
+<p></p>
+<h4>Source Code:</h4>
+<p></p>
+<ul>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.py">fem1d.py</a>, the source code.</li>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.sh">fem1d.sh</a>, commands to compile the source code.</li>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.txt">fem1d.txt</a>, the output file.</li>
+</ul>
+<p></p>
+<p></p>
+<ul>
+<li><a href="https://people.sc.fsu.edu/~jburkardt/py_src/fem1d/fem1d.png">fem1d.png</a>, a plot comparing the computed and exact solutions.</li>
+</ul>
+<h2>Matlab</h2>
+<p><a href="http://www.spacar.nl/wiki/doku.php?id=start">http://www.spacar.nl/wiki/doku.php?id=start</a></p>
+<p><a href="/downloads/spacar_man2009.pdf">spacar_man2009.pdf</a></p>
+<p><a href="/downloads/protmodslides2015.pdf">protmodslides2015.pdf</a></p>
+<p><a href="/downloads/protmod2014.pdf">protmod2014.pdf</a></p>
+<p></p>
+<p><a href="https://github.com/lyc102/ifem">https://github.com/lyc102/ifem</a></p>
+<p><a href="https://www.math.uci.edu/~chenlong/programming.html">https://www.math.uci.edu/~chenlong/programming.html</a></p>
+<p></p>
+<p><a href="https://github.com/JWock82/PyNite">https://github.com/JWock82/PyNite</a></p>
+<p><a href="https://www.eng-tips.com/viewthread.cfm?qid=474433">https://www.eng-tips.com/viewthread.cfm?qid=474433</a></p>
+<h2>abaqus</h2>
+<p>利用 <a href="https://www.standoutvitae.com/article/gautampuri0161663/abaqus-basics/">https://www.standoutvitae.com/article/gautampuri0161663/abaqus-basics/</a> 中的範例分別在 Abaqus, Range3, Ansys, Comsol, NGSolve 中進行分析比較其結果.</p>
+<p>列出有限元素分析法的分析原理並利用上述範例延伸至摺疊椅的強度分析.</p>
+<p>27011_37</p>
+<p><a href="https://www.standoutvitae.com/article/gautampuri050534/abaqus-fea-tutorial-series/">https://www.standoutvitae.com/article/gautampuri050534/abaqus-fea-tutorial-series/</a></p>
+<p><a href="http://130.149.89.49:2080/v6.14/pdf_books/index.pdf">http://130.149.89.49:2080/v6.14/pdf_books/index.pdf</a></p>
+<p><a href="/downloads/The Secondary Development of ABAQUS by using Python and the Application of the Advanced GA.pdf">The Secondary Development of ABAQUS by using Pythonand the Application of the Advanced GA.pdf</a></p>
+<p><a href="/downloads/ABAQUS_python_tutorial.pdf">ABAQUS_python_tutorial.pdf</a></p>
+<p><a href="/downloads/Abaqus_SCRIPT_USER.pdf">Abaqus_SCRIPT_USER.pdf</a></p>
+<p><a href="/downloads/learnabaqusscriptinonehour.pdf">learnabaqusscriptinonehour.pdf</a></p>
+<p><a href="/downloads/Python Scripts for Abaqus.pdf">Python Scripts for Abaqus.pdf</a></p>
+<p><a href="/downloads/abaqus_scripting-summary.pdf">abaqus_scripting-summary.pdf</a></p>
+<p><a href="/downloads/lsight_tip1805_102.pdf">lsight_tip1805_102.pdf</a></p>
+<p><a href="/downloads/Finite ElementModelingwith  Abaqusand Pythonfor Thermal andStress Analysis.pdf">Finite ElementModelingwith Abaqusand Pythonfor Thermal andStress Analysis.pdf</a></p>
+<p><a href="/downloads/A Pragmatic Introduction to theFinite Element Methodfor Thermal and Stress Analysis.pdf">A Pragmatic Introduction to theFinite Element Methodfor Thermal and Stress Analysis.pdf</a></p>
+<p><a href="http://hogwarts.ucsd.edu/~pkrysl/faesor/#downloads">http://hogwarts.ucsd.edu/~pkrysl/faesor/#downloads</a></p>
+<p><a href="/downloads/DimensionalModelReductioninNon-linearFiniteElementDynamicsofSolidsandStructures.pdf">DimensionalModelReductioninNon-linearFiniteElementDynamicsofSolidsandStructures.pdf</a></p>
+<p><a href="/downloads/軌道絕緣接頭之應力數值分析.pdf">軌道絕緣接頭之應力數值分析.pdf</a></p>
+<p><a href="/downloads/Abaqus 6.14 EXAMPLES_1.pdf">Abaqus 6.14 EXAMPLES_1.pdf</a></p>
+<p><a href="/downloads/Abaqus 6.14 EXAMPLES_2.pdf">Abaqus 6.14 EXAMPLES_2.pdf</a></p>
+<h2>FEM 應用</h2>
+<p><a href="/downloads/fem_ref.7z">fem_ref.7z</a></p>
+<p></p>
+<p></p>
+<h2>專利搜尋</h2>
 <p><a href="https://github.com/daneads/pypatent">https://github.com/daneads/pypatent</a> </p>
 <p><a href="https://github.com/wenyalintw/Google-Patents-Scraper">https://github.com/wenyalintw/Google-Patents-Scraper</a> </p>
 <p><a href="https://github.com/helmersl/patent_similarity_search">https://github.com/helmersl/patent_similarity_search</a> </p>
 <p><a href="https://github.com/ryanlstevens/google_patent_scraper">https://github.com/ryanlstevens/google_patent_scraper</a> </p>
 <p><a href="https://commercedataservice.github.io/tutorial_pto/">https://commercedataservice.github.io/tutorial_pto/</a> </p>
 <p><a href="https://en.wikipedia.org/wiki/User:Jrincayc/Patent_utils">https://en.wikipedia.org/wiki/User:Jrincayc/Patent_utils</a> </p>
-<p><a href="http://www.ipstreet.com/">http://www.ipstreet.com/</a> </p>
-<h1>參數式 CAD</h1>
+<p><a href="http://www.ipstreet.com/">http://www.ipstreet.com/</a> </p><h2>參數式 CAD</h2>
 <h4>Solvesapce: 自行編譯, 可修改功能, Pyslvs-UI 應用核心</h4>
 <h4>Onshape: 雲端系統</h4>
 <h4>NX12: 高端參數 CAD</h4>
-<h4>Solidworks 2017: 最普遍使用參數 CAE</h4>
-<h2>Solvespace</h2>
+<h4>Solidworks 2017: 最普遍使用參數 CAE</h4><h2>Solvespace</h2>
 <p>可以直接從 <a href="https://github.com/Symbian9/SolveSpace-Daily-Engineering/blob/master/README.md#solvespace-3x-slvs">https://github.com/Symbian9/SolveSpace-Daily-Engineering/blob/master/README.md#solvespace-3x-slvs</a> 下載, 或自行編譯.</p>
 <ol>
 <li>
@@ -302,6 +302,7 @@ make
 <p style="padding-left: 30px;"><a href="http://wias-berlin.de/software/index.jsp?id=TetGen&amp;lang=1">tetgen.org</a> (<a href="https://github.com/ufz/tetgen">https://github.com/ufz/tetgen</a>)</p>
 <p style="padding-left: 30px;">Python interface to tetgen: <a href="https://github.com/pyvista/tetgen">https://github.com/pyvista/tetgen</a></p>
 <p style="padding-left: 30px;"><a href="https://depositonce.tu-berlin.de/handle/11303/5104">Three Dimensional Boundary Conforming Delaunay Mesh Generation</a> - Ph.D. dissertation</p>
+<h2>Abaqus</h2>
 <h2>Range3</h2>
 <ol>
 <li>啟動 22G 可攜程式系統後, 假設要將 Range3 的原始碼 clone 到 y:\project2020 目錄中, 在命令列中, 從 y:\ 目錄 mkdir project2020, 並 cd project2020 後:</li>
@@ -328,8 +329,7 @@ make
 <h4>其他開源 CAE</h4>
 <p style="padding-left: 30px;"><a href="https://en.z88.de/" rel="nofollow">https://en.z88.de/</a></p>
 <p style="padding-left: 30px;"><a href="https://su2code.github.io/" rel="nofollow">https://su2code.github.io/</a></p>
-<p style="padding-left: 30px;"><a href="https://github.com/FreeFem">https://github.com/FreeFem</a></p>
-<h3>Range3 Tutorial</h3>
+<p style="padding-left: 30px;"><a href="https://github.com/FreeFem">https://github.com/FreeFem</a></p><h3>Range3 Tutorial</h3>
 <p><a href="/downloads/Range3_beam_ex.7z">Range3_beam_ex.7z</a></p>
 <p><img alt="" height="358" src="/images/Weight_1000_KG.png" width="600"/></p>
 <p><img alt="" height="358" src="/images/Left_and_Right_fixed.png" width="600"/></p>
@@ -369,15 +369,17 @@ make
 <li>利用 Pyslvs-UI 嘗試進行迴避設計</li>
 </ol>
 <p><a href="/downloads/Collapsible Chair.pdf">Collapsible Chair.pdf</a></p>
-<p><a href="/downloads/Innovative Design of the Combined Rocking Horse Toy and Folding Chair for Children.pdf">Innovative Design of the Combined Rocking Horse Toy and Folding Chair for Children.pdf</a></p><h2>Folding Funiture</h2>
+<p><a href="/downloads/Innovative Design of the Combined Rocking Horse Toy and Folding Chair for Children.pdf">Innovative Design of the Combined Rocking Horse Toy and Folding Chair for Children.pdf</a></p>
+<h2>Folding Funiture</h2>
 <p><a href="/downloads/Foldabilizing Furniture.pdf">Foldabilizing Furniture.pdf</a></p>
-<p><a href="/downloads/ANALYSIS  OF  JAPANESE  AND  FINNISH  FURNITURE DESIGN.pdf">ANALYSIS OF JAPANESE AND FINNISH FURNITURE DESIGN.pdf</a></p><h1>Julia</h1>
+<p><a href="/downloads/ANALYSIS  OF  JAPANESE  AND  FINNISH  FURNITURE DESIGN.pdf">ANALYSIS OF JAPANESE AND FINNISH FURNITURE DESIGN.pdf</a></p>
+<h1>Ref</h1>
+<h2>Julia</h2>
 <p>Julia 是 2012 年出現的高階程式語言, 可以將其視為 21 世紀 Fortran, Python 與 Matlab 合體的新一代運算導向語言.</p>
 <p><a href="http://www.stochasticlifestyle.com/comparison-differential-equation-solver-suites-matlab-r-julia-python-c-fortran/">http://www.stochasticlifestyle.com/comparison-differential-equation-solver-suites-matlab-r-julia-python-c-fortran/</a></p>
 <p><a href="https://discourse.julialang.org/t/ann-gridap-jl-a-feature-rich-finite-element-ecosystem-100-in-julia/42824">https://discourse.julialang.org/t/ann-gridap-jl-a-feature-rich-finite-element-ecosystem-100-in-julia/42824</a> </p>
 <p><a href="https://github.com/gridap/Gridap.jl">https://github.com/gridap/Gridap.jl</a> </p>
-<p><a href="https://gitter.im/Gridap-jl/community">https://gitter.im/Gridap-jl/community</a> </p>
-<h1>CMSiMDE</h1>
+<p><a href="https://gitter.im/Gridap-jl/community">https://gitter.im/Gridap-jl/community</a> </p><h2>CMSiMDE</h2>
 <p><a href="https://websitesetup.org/bootstrap-tutorial-for-beginners/">https://websitesetup.org/bootstrap-tutorial-for-beginners/</a></p>
 <p><a href="https://colorlib.com/wp/themes/travelify/">https://colorlib.com/wp/themes/travelify/</a> </p>
 <p><a href="https://github.com/puikinsh/travelify">https://github.com/puikinsh/travelify</a></p>
@@ -389,5 +391,3 @@ make
 <p>sudo systemctl restart cmsimde 重新啟動 cmsimde 服務</p>
 <p>uwsgi.ini 中啟用的 user and group 必須與 cad2_site 資料結構一致, 也就是設為 yen:cad2</p>
 <p>如此只要用戶屬於 cad2 群組的用戶都能夠登入後, 進入 /home/cad2/cad2_site 執行 git 指令</p>
-<h1>test</h1>
-<p>1234654654654654654</p>
