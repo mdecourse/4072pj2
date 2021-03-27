@@ -133,59 +133,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">參數式 CAD << <a href='參數式 CAD.html'>Previous</a> <a href='FEM theory.html'>Next</a> >> FEM theory<br /><h1>Solvespace</h1>
-<p>可以直接從 <a href="https://github.com/Symbian9/SolveSpace-Daily-Engineering/blob/master/README.md#solvespace-3x-slvs">https://github.com/Symbian9/SolveSpace-Daily-Engineering/blob/master/README.md#solvespace-3x-slvs</a> 下載, 或自行編譯.</p>
-<ol>
-<li>
-<p>編譯 Solvespace 的步驟, 需要先下載能夠<a href="https://drive.google.com/file/d/1AaOdJdZPNiD3YE5kgNcIrLK7ic0qsme1/view?usp=sharing" rel="nofollow">編譯 C++17 原始碼的可攜系統</a></p>
-</li>
-<li>
-<p>接著啟動可攜系統後, 以</p>
-</li>
-</ol>
-<p style="padding-left: 30px;">git clone --recurse-submodules<span> </span><a href="https://github.com/solvespace/solvespace.git">https://github.com/solvespace/solvespace.git</a></p>
-<p style="padding-left: 30px;">取下最新的程式碼, 以及子模組中的所有原始碼.</p>
-<ol start="3">
-<li>
-<p>接著要確定 portablegit\bin\ 與 Y:\msys64\usr\bin\ 目錄中的 sh.exe 都改名為 sh_rename_for_compiling_solvespace.exe</p>
-</li>
-<li>
-<p>由於上述可攜系統已經安裝 Msys2 與 CMAKE, 因此只需要在命令列中進入 solvespace 原始碼目錄, 以 mkdir 建立 build 目錄, 然後 cd build 後, 執行:</p>
-</li>
-</ol>
-<p style="padding-left: 30px;">cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release</p>
-<p style="padding-left: 30px;">以便建立所需的 Makefile</p>
-<ol start="5">
-<li>然後再利用</li>
-</ol>
-<p style="padding-left: 30px;">make</p>
-<p>完成所有程式碼的編譯.</p>
-<ol start="6">
-<li>最後 solvespace.exe 已經位於 solvespace/build/bin 目錄中, 只要再從 Y:\msys64\mingw64\bin\libwinpthread-1.dll 複製 dll 檔案放入 bin 目錄, 就可以啟動 solvespace.exe 進行參數零件, 轉出 stl 檔案 (為 binary stl 格式) 後, 就可以導入 Range3 進行後續的 CAE 分析.</li>
-</ol>
-<p><span>from https://drive.google.com/file/d/1AaOdJdZPNiD3YE5kgNcIrLK7ic0qsme1/view?usp=sharing get wcm2020_project</span></p>
-<p>about cmake:<span> </span><a href="https://cmake.org/" rel="nofollow">https://cmake.org/</a></p>
-<p>about msys2:<span> </span><a href="https://www.msys2.org/" rel="nofollow">https://www.msys2.org/</a></p>
-<p>about solvespace:<span> </span><a href="https://github.com/solvespace/solvespace">https://github.com/solvespace/solvespace</a></p>
-<p>install cmake</p>
-<pre><code>pacman -S mingw-w64-x86_64-cmake
-</code></pre>
-<p>rename Y:\msys64\usr\bin\sh.exe to sh_renamed_for_compiling_solvespace.exe</p>
-<p>build solvespace.exe</p>
-<p>use mingw64.exe</p>
-<pre><code>cd /y/tmp/cad_ex
-
-cd solvespace
-mkdir build
-cd build
-cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release
-make
-</code></pre>
-<p>need Y:\msys64\mingw64\bin\libwinpthread-1.dll to execute solvespace.exe</p>
-<hr/>
-<p>根據上述步驟完成的編譯專案檔案位於:</p>
-<p><a href="https://drive.google.com/file/d/1UBaq2Lmc9q_vtQYVkkZ7_wlBvStDfKUt/view?usp=sharing" rel="nofollow">project2020-2_compile_solvespace.7z</a></p>
-<br />參數式 CAD << <a href='參數式 CAD.html'>Previous</a> <a href='FEM theory.html'>Next</a> >> FEM theory</div>
+    <div id="tipue_search_content">1 Dimension << <a href='1 Dimension.html'>Previous</a> <a href='Abaqus.html'>Next</a> >> Abaqus<br /><h1>2 Dimension</h1><br />1 Dimension << <a href='1 Dimension.html'>Previous</a> <a href='Abaqus.html'>Next</a> >> Abaqus</div>
         
     <!-- footer -->
       <div class="container">

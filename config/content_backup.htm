@@ -11,9 +11,7 @@
 <hr/>
 <p><a href="/downloads/table_of_greek_letters.pdf">table_of_greek_letters.pdf</a></p>
 <p>Mathmatical Symbols: <a href="https://en.wikipedia.org/wiki/Table_of_mathematical_symbols_by_introduction_date">https://en.wikipedia.org/wiki/Table_of_mathematical_symbols_by_introduction_date</a></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <p></p>
-<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; fea3bf9966f4d0c6f92d894d4989f64844943109</p>
 <h2>About FEM</h2>
 <p>有限元素分析，即使用有限元素法（英文：finite element method）分析物理現象，是一種用於求解微分方程組或積分方程組數值解的數值方法，它能運用在各種工程上的問題，像結構分析，熱傳遞，流體流動，質量傳輸和電磁勢的傳統領域。</p>
 <p>偏微分方程式:$f(x) = \int_{0}^{x} f'(t)dt$</p>
@@ -21,7 +19,8 @@
 <p>優點：<br/>﹙1﹚鄰近元素的材料性質不一定要相同。如此，能使這種疾法應用到由不同材料所組成的物體。<br/>﹙2﹚不規則形狀的邊界，能用直邊的元素作近似估計，或用曲線邊界作正確配合。<br/>﹙3﹚元素的大小可以改變。這種性質能視要，將元素格了擴大或縮小。﹙4﹚邊界條件，諸如不連續性的面負荷，用這種鞋法不會產生任何困鄞。能很容易解決混合邊界條件。<br/>缺點：<br/>﹙1﹚有限元素法的解法非常的龐雜，即使是一個小問題若用人工來計算仍是相當的複雜，所以相當需要電腦的輔助運作，</p>
 <p>工作流程包括<br/>（1）將問題的域劃分為子域的集合，每個子域由一組元素方程表示為原始問題，然後（2）系統地將所有元素方程組重組為用於最終計算的全域方程組。<br/>在上面的第一步中，元素方程是簡化過的方程，可以局部地近似要研究的原始復雜方程組，其中原始方程通常是偏微分方程。為了求此方程式的近似解，通常將有限元素法作為伽遼金法的特例來處理。用數學語言來說，該過程是將殘差和加權函數取內積，並將該積分設為零。簡單來說，它是通過將試驗函數擬合到偏微分方程中來最小化近似誤差的過程。殘差是由試驗函數引起的誤差，權重函數是投影殘差的多項式逼近函數。該過程消除了偏微分方程中的所有空間導數，從而使偏微分方程局部近似為一組穩態問題的代數方程，或是一組用於瞬態問題的常微分方程。如果基礎偏微分方程是線性的，則元素方程也是線性的，反之亦然。穩態問題中出現的代數方程組，便利用數值線性代數方法求解，而瞬態問題中出現的常微分方程組則使用其他數值方法（例如歐拉方法或Runge-Kutta法）通過數值積分來求解。</p>
 <p>歷史 有限元法最初起源於土木工程和航空工程中的彈性和結構分析問題的研究。它的發展可以追溯到Alexander Hrennikoff（1941）和Richard Courant (1942)的工作。他們使用的方法有很大的差異，但是他們具有共同的部分：利用網格離散化將一個連續區域轉化為一族離散的子區域，通常叫做元.Hrennikoff的工作離散用類似于格子的網格離散區域; Courant的方法將區域分解為有限個三角形的子區域，用於求解來源於圓柱體轉矩問題的二階橢圓偏微分方程. Courant的貢獻推動了有限元的發展，繪製了早期偏微分方程的研究結果。</p>
-<p><br/>有限元素方法的發展開始於五十年代中後期使用在機身框架和結構分析上，並於六十年代通過斯圖加特大學的John Argyris和柏克萊加州大學的Ray W. Clough在土木工程中的應用工作中積累經驗。<br/>基於五十年代至六十年代大型水壩計算研究的實踐經驗，1965年，中國計算數學專家馮康發表了《基於變分原理的差分格式》一文，奠定了有限元計算方法的嚴格數學理論，為後世有限元計算方法的實際應用提供了理論保證。<br/> (https://zh.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E5%85%83%E5%88%86%E6%9E%90</p><h2>參考資料</h2>
+<p><br/>有限元素方法的發展開始於五十年代中後期使用在機身框架和結構分析上，並於六十年代通過斯圖加特大學的John Argyris和柏克萊加州大學的Ray W. Clough在土木工程中的應用工作中積累經驗。<br/>基於五十年代至六十年代大型水壩計算研究的實踐經驗，1965年，中國計算數學專家馮康發表了《基於變分原理的差分格式》一文，奠定了有限元計算方法的嚴格數學理論，為後世有限元計算方法的實際應用提供了理論保證。<br/> (https://zh.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E5%85%83%E5%88%86%E6%9E%90</p>
+<h2>參考資料</h2>
 <ol>
 <li><a href="https://github.com/Range-Software/range3">https://github.com/Range-Software/range3</a></li>
 <li><a href="https://dart.dev/articles/archive/numeric-computation">https://dart.dev/articles/archive/numeric-computation</a></li>
@@ -141,8 +140,9 @@ sudo certbot renew --dry-run</pre>
 <p><span>一維:</span></p>
 <p><span>$\mathrm{P1} :\left\{\begin{matrix} <br/> u''(x)=f(x)\mathrm{in} (0,1), \\ <br/> u(0)=u(1)=0,<br/>\end{matrix}\right.$</span></p>
 <p>二維:</p>
-<p>\mathrm{P2}:\begin{cases}<br/>u {\tiny xx} (x,y)+u{\tiny yy}(x,y) = f(x,y)&amp;\mathrm{in} \ \Omega\\<br/>u=0&amp;\mathrm{on}    \ \partial\Omega<br/><br/>\end{cases}</p>
-<p></p><h1>專題流程</h1>
+<p>$\mathrm{P2}:\begin{cases}<br/>u {\tiny xx} (x,y)+u{\tiny yy}(x,y) = f(x,y)&amp;\mathrm{in} \ \Omega\\<br/>u=0&amp;\mathrm{on}    \ \partial\Omega<br/><br/>\end{cases}$</p>
+<p></p>
+<h1>專題流程</h1>
 <p>討論區: <a href="https://github.com/mdecourse/4072pj2/discussions">https://github.com/mdecourse/4072pj2/discussions</a></p>
 <p>Finite Element Analysis (有限元素分析) 是一種<span style="background-color: #ffff00;">數值分析方法</span>可用來<span style="background-color: #ffff00;">解系統的微分方程式</span>, 主要是利用<span style="background-color: #ffff00;">數學近似</span>的方法模擬<span style="background-color: #ffff00;">真實物理系統在各種受力或環境邊界條件下的反應情形</span>. 方法架構是利用<span style="background-color: #ffff00;">簡單且相互作用的元素單元</span>互相結合運算下, 就可以利用<span style="background-color: #ffff00;">有限數量</span>的未知量逼近<span style="background-color: #ffff00;">無限</span>未知量的真實系統.</p>
 <p><a href="https://en.wikipedia.org/wiki/Finite_element_method">Finite Element Method</a></p>
@@ -302,6 +302,10 @@ make
 <p>根據上述步驟完成的編譯專案檔案位於:</p>
 <p><a href="https://drive.google.com/file/d/1UBaq2Lmc9q_vtQYVkkZ7_wlBvStDfKUt/view?usp=sharing" rel="nofollow">project2020-2_compile_solvespace.7z</a></p>
 <h1>FEM theory</h1>
+<p>1dimension </p>
+<p>2dimension</p>
+<p>mathematics symbol</p>
+<hr/>
 <p><a href="https://drive.google.com/file/d/1m4yuj8B2YsMQb3WQqqFW_klN93oX0J5Z/view?usp=sharing">下載專門用於 Range3 與 NGSolve 的可攜套件</a> (使用 Python 3.7.9)</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/KPEqYtEd-zY" width="560"></iframe></p>
 <p><a href="/downloads/Introduction to NumericalMethods for VariationalProblems.pdf">Introduction to NumericalMethods for VariationalProblems.pdf</a></p>
@@ -373,7 +377,7 @@ make
 <p style="padding-left: 30px;"><a href="/downloads/2020_HDGlab An open-source implementation of thehybridisable discontinuous Galerkin method inMATLAB.pdf">2020_HDGlab An open-source implementation of thehybridisable discontinuous Galerkin method inMATLAB.pdf</a></p>
 <p>Magnetic Field Computation:</p>
 <p style="padding-left: 30px;"><a href="https://github.com/mdecourse/magpylib">https://github.com/mdecourse/magpylib</a></p>
-<h1>應用範例</h1>
+<h1>Application </h1>
 <p><a href="http://sfepy.org/doc-devel/index.html">http://sfepy.org/doc-devel/index.html</a></p>
 <p><img alt="" height="356" src="/images/image-Applied_temperature_on_volume.png" width="600"/></p>
 <p><img alt="" height="900" src="/images/image-Adaptive_mesh-example.png" width="600"/></p>

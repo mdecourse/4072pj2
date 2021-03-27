@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='About FEM.html'>About FEM</a><li><a href='參考資料.html'>參考資料</a><li><a href='動態網站.html'>動態網站</a><li><a href='數位簽章.html'>數位簽章</a></li></ul><li><a href='test_latex.html'>test_latex</a><li class='has-children'><a href='專題流程.html'>專題流程</a><ul class='dropdown'><li><a href='1DFEM.html'>1DFEM</a><li><a href='Matlab.html'>Matlab</a><li><a href='abaqus.html'>abaqus</a><li><a href='FEM 應用.html'>FEM 應用</a><li><a href='專利搜尋.html'>專利搜尋</a><li><a href='參數式 CAD.html'>參數式 CAD</a><li><a href='Solvespace.html'>Solvespace</a></li></ul><li class='has-children'><a href='FEM theory.html'>FEM theory</a><ul class='dropdown'><li><a href='Abaqus.html'>Abaqus</a><li class='has-children'><a href='Range3.html'>Range3</a><ul class='dropdown'><li><a href='Range3 Tutorial.html'>Range3 Tutorial</a></li></ul><li><a href='Ngsolve.html'>Ngsolve</a></li></ul><li class='has-children'><a href='應用範例.html'>應用範例</a><ul class='dropdown'><li><a href='Folding Chair.html'>Folding Chair</a><li><a href='Folding Funiture.html'>Folding Funiture</a></li></ul><li class='has-children'><a href='Ref.html'>Ref</a><ul class='dropdown'><li><a href='Julia.html'>Julia</a><li><a href='CMSiMDE.html'>CMSiMDE</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='About FEM.html'>About FEM</a><li><a href='參考資料.html'>參考資料</a><li><a href='動態網站.html'>動態網站</a><li><a href='數位簽章.html'>數位簽章</a></li></ul><li><a href='test_latex.html'>test_latex</a><li class='has-children'><a href='專題流程.html'>專題流程</a><ul class='dropdown'><li><a href='1DFEM.html'>1DFEM</a><li><a href='Matlab.html'>Matlab</a><li><a href='abaqus.html'>abaqus</a><li><a href='FEM 應用.html'>FEM 應用</a><li><a href='專利搜尋.html'>專利搜尋</a><li><a href='參數式 CAD.html'>參數式 CAD</a><li><a href='Solvespace.html'>Solvespace</a></li></ul><li class='has-children'><a href='FEM theory.html'>FEM theory</a><ul class='dropdown'><li><a href='1 Dimension.html'>1 Dimension</a><li><a href='2 Dimension.html'>2 Dimension</a><li><a href='Abaqus.html'>Abaqus</a><li class='has-children'><a href='Range3.html'>Range3</a><ul class='dropdown'><li><a href='Range3 Tutorial.html'>Range3 Tutorial</a></li></ul><li><a href='Ngsolve.html'>Ngsolve</a></li></ul><li class='has-children'><a href='Application.html'>Application</a><ul class='dropdown'><li><a href='Folding Chair.html'>Folding Chair</a><li><a href='Folding Funiture.html'>Folding Funiture</a></li></ul><li class='has-children'><a href='Ref.html'>Ref</a><ul class='dropdown'><li><a href='Julia.html'>Julia</a><li><a href='CMSiMDE.html'>CMSiMDE</a></li>
                       </ul>
                 </nav>
               </div>
@@ -140,7 +140,8 @@ img.add_border {
 <p>優點：<br/>﹙1﹚鄰近元素的材料性質不一定要相同。如此，能使這種疾法應用到由不同材料所組成的物體。<br/>﹙2﹚不規則形狀的邊界，能用直邊的元素作近似估計，或用曲線邊界作正確配合。<br/>﹙3﹚元素的大小可以改變。這種性質能視要，將元素格了擴大或縮小。﹙4﹚邊界條件，諸如不連續性的面負荷，用這種鞋法不會產生任何困鄞。能很容易解決混合邊界條件。<br/>缺點：<br/>﹙1﹚有限元素法的解法非常的龐雜，即使是一個小問題若用人工來計算仍是相當的複雜，所以相當需要電腦的輔助運作，</p>
 <p>工作流程包括<br/>（1）將問題的域劃分為子域的集合，每個子域由一組元素方程表示為原始問題，然後（2）系統地將所有元素方程組重組為用於最終計算的全域方程組。<br/>在上面的第一步中，元素方程是簡化過的方程，可以局部地近似要研究的原始復雜方程組，其中原始方程通常是偏微分方程。為了求此方程式的近似解，通常將有限元素法作為伽遼金法的特例來處理。用數學語言來說，該過程是將殘差和加權函數取內積，並將該積分設為零。簡單來說，它是通過將試驗函數擬合到偏微分方程中來最小化近似誤差的過程。殘差是由試驗函數引起的誤差，權重函數是投影殘差的多項式逼近函數。該過程消除了偏微分方程中的所有空間導數，從而使偏微分方程局部近似為一組穩態問題的代數方程，或是一組用於瞬態問題的常微分方程。如果基礎偏微分方程是線性的，則元素方程也是線性的，反之亦然。穩態問題中出現的代數方程組，便利用數值線性代數方法求解，而瞬態問題中出現的常微分方程組則使用其他數值方法（例如歐拉方法或Runge-Kutta法）通過數值積分來求解。</p>
 <p>歷史 有限元法最初起源於土木工程和航空工程中的彈性和結構分析問題的研究。它的發展可以追溯到Alexander Hrennikoff（1941）和Richard Courant (1942)的工作。他們使用的方法有很大的差異，但是他們具有共同的部分：利用網格離散化將一個連續區域轉化為一族離散的子區域，通常叫做元.Hrennikoff的工作離散用類似于格子的網格離散區域; Courant的方法將區域分解為有限個三角形的子區域，用於求解來源於圓柱體轉矩問題的二階橢圓偏微分方程. Courant的貢獻推動了有限元的發展，繪製了早期偏微分方程的研究結果。</p>
-<p><br/>有限元素方法的發展開始於五十年代中後期使用在機身框架和結構分析上，並於六十年代通過斯圖加特大學的John Argyris和柏克萊加州大學的Ray W. Clough在土木工程中的應用工作中積累經驗。<br/>基於五十年代至六十年代大型水壩計算研究的實踐經驗，1965年，中國計算數學專家馮康發表了《基於變分原理的差分格式》一文，奠定了有限元計算方法的嚴格數學理論，為後世有限元計算方法的實際應用提供了理論保證。<br/> (https://zh.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E5%85%83%E5%88%86%E6%9E%90</p><br />About << <a href='About.html'>Previous</a> <a href='參考資料.html'>Next</a> >> 參考資料</div>
+<p><br/>有限元素方法的發展開始於五十年代中後期使用在機身框架和結構分析上，並於六十年代通過斯圖加特大學的John Argyris和柏克萊加州大學的Ray W. Clough在土木工程中的應用工作中積累經驗。<br/>基於五十年代至六十年代大型水壩計算研究的實踐經驗，1965年，中國計算數學專家馮康發表了《基於變分原理的差分格式》一文，奠定了有限元計算方法的嚴格數學理論，為後世有限元計算方法的實際應用提供了理論保證。<br/> (https://zh.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E5%85%83%E5%88%86%E6%9E%90</p>
+<br />About << <a href='About.html'>Previous</a> <a href='參考資料.html'>Next</a> >> 參考資料</div>
         
     <!-- footer -->
       <div class="container">
@@ -182,11 +183,12 @@ img.add_border {
             -->
             <script src="../cmsimde/static/chimper/js/main.js"></script>
         
-<!-- 啟用 LaTeX equations 編輯 --> <script>
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
   MathJax = {
     tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
   };
   </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
     </body></html>
         
