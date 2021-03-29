@@ -1299,7 +1299,15 @@ make
 <p style="padding-left: 30px;">Python interface to tetgen: <a href="https://github.com/pyvista/tetgen">https://github.com/pyvista/tetgen</a></p>
 <p style="padding-left: 30px;"><a href="https://depositonce.tu-berlin.de/handle/11303/5104">Three Dimensional Boundary Conforming Delaunay Mesh Generation</a> - Ph.D. dissertation</p>
 <p style="padding-left: 30px;"></p><h2>1 Dimension</h2>
-<h2>2 Dimension</h2><h2>Abaqus</h2>
+<p><big><big><big><big><span face="標楷體" style="font-family: 標楷體;">1.1.1分段多項式空間</span></big></big></big></big></p>
+<p><big><big><span face="標楷體" style="font-family: 標楷體;">1.1.1 線性多項式空間</span></big></big></p>
+<p><big><span face="標楷體" style="font-family: 標楷體;">假設$I=\left[x_{0}, x_{1}\right]$，$P_{1}(I)$表示成空間向量線性方程式，我們可得到下列定義式</span></big></p>
+<p><br/>$P_{1}(I)=\left\{v: v(x)=c_{0}+c_{1} x, x \in I, c_{0}, c_{1} \in \mathbb{R}\right\}$</p>
+<p><br/><big><span face="標楷體" style="font-family: 標楷體;">由上面定義式可得知<span>$P_{1}(I)$</span>在$v(x)=c_{0}+c_{1} x$中包含了所有形式的函數，也就是說<span>$P_{1}(I)$</span>是一個單項式$\{1, x\}$，其集合位於1~X之間。在<span>$v(x)=c_{0}+c_{1} x$</span>中$v$被$1 \times C_{0}+1 \times C_{0} x$明確定義，這就是所謂的線性組合係數，由此可知v有兩個自由度且由c0、c1掌握。</span></big></p>
+<p><big><span face="標楷體" style="font-family: 標楷體;">對於v來說其自由度不僅僅只有<span>$c_{0}$、</span><span>$c_{1}$</span>，根據線性定義一條線由兩點連線形成，由此可得知v的自由度有許多組，特別的是V的值$\alpha_{0}=v\left(x_{0}\right)$、$\alpha_{1}=v\left(x_{1}\right)$可藉由$I$的$x_{0}$、$x_{1}$求得</span></big></p>
+<p><big><span face="標楷體" style="font-family: 標楷體;">為了證明上述理論，我們假設已知$\alpha_{0}=v\left(x_{0}\right)$<span>、$\alpha_{1}=v\left(x_{1}\right)$</span></span></big></p>
+<p><span face="標楷體" style="font-family: 標楷體;">$\left[\begin{array}{ll}1 &amp; x_{0} \\ 1 &amp; x_{1}\end{array}\right]\left[\begin{array}{l}c_{0} \\ c_{1}\end{array}\right]=\left[\begin{array}{l}\alpha_{0} \\ \alpha_{1}\end{array}\right]$</span></p>
+<p></p><h2>2 Dimension</h2><h2>Abaqus</h2>
 <h2>Range3</h2>
 <ol>
 <li>啟動 22G 可攜程式系統後, 假設要將 Range3 的原始碼 clone 到 y:\project2020 目錄中, 在命令列中, 從 y:\ 目錄 mkdir project2020, 並 cd project2020 後:</li>
