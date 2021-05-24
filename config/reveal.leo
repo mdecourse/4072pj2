@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
-<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
-	<global_window_position top="50" left="50" height="500" width="700"/>
-	<global_log_window_position top="0" left="0" height="0" width="0"/>
-</globals>
+<leo_header file_format="2"/>
+<globals/>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -13,28 +10,88 @@
 <v t="leo.20180902120538.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20180902120538.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20180902120523.1" a="E"><vh>編輯 reveal</vh>
-<v t="leo.20180902120523.2" a="E"><vh>@path ./../reveal</vh>
-<v t="leo.20180902120523.3" a="E"><vh>@clean index.html</vh>
-<v t="leo.20180902120523.4" a="E"><vh>html</vh>
+<v t="leo.20180902120523.1"><vh>編輯 reveal</vh>
+<v t="leo.20180902120523.2"><vh>@path ./../reveal</vh>
+<v t="leo.20180902120523.3"><vh>@clean index.html</vh>
+<v t="leo.20180902120523.4"><vh>html</vh>
 <v t="leo.20180902120523.5"><vh>head</vh></v>
-<v t="leo.20180902120523.6" a="E"><vh>body</vh>
-<v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
-<v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
-<v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
+<v t="leo.20180902120523.6"><vh>body</vh>
+<v t="leo.20180902120523.7"><vh>reveal div</vh>
+<v t="leo.20180902120523.8"><vh>slides div</vh>
+<v t="leo.20180902120523.11"><vh>封面</vh>
+<v t="leo.20210523102652.1"><vh>封面</vh></v>
 </v>
-<v t="leo.20180902120523.11" a="E"><vh>快捷鍵</vh>
-<v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20210524083803.1"><vh>目錄</vh>
+<v t="leo.20210524083803.2"><vh>目錄</vh></v>
+</v>
+<v t="leo.20210524133344.1"><vh>摘要封面</vh>
+<v t="leo.20210524133344.2"><vh>摘要封面</vh></v>
+</v>
+<v t="leo.20210524151710.1"><vh>摘要</vh>
+<v t="leo.20210524151710.2"><vh>摘要</vh></v>
+</v>
+<v t="leo.20210524152407.1"><vh>研究目的封面</vh>
+<v t="leo.20210524152407.2"><vh>研究目的封面</vh></v>
+</v>
+<v t="leo.20210524132844.1"><vh>研究目的</vh>
+<v t="leo.20210524132844.2"><vh>研究目的</vh></v>
+</v>
+<v t="leo.20210524152555.1"><vh>1D,2D封面</vh>
+<v t="leo.20210524152555.2"><vh>1D,2D封面</vh></v>
+</v>
+<v t="leo.20210524132846.1"><vh>1D理論</vh>
+<v t="leo.20210524132846.2"><vh>1D理論</vh></v>
+</v>
+<v t="leo.20210524135335.1"><vh>2D理論</vh>
+<v t="leo.20210524135335.2"><vh>2D理論</vh></v>
+</v>
+<v t="leo.20210524152733.1"><vh>Range3與Abaqus之比較封面</vh>
+<v t="leo.20210524152733.2"><vh>Range3與Abaqus之比較封面</vh></v>
+</v>
+<v t="leo.20210524132849.1"><vh>Range3簡介</vh>
+<v t="leo.20210524132849.2"><vh>Range3簡介</vh></v>
+</v>
+<v t="leo.20210524154520.1"><vh>Range3分析</vh>
+<v t="leo.20210524154520.2"><vh>Range3分析</vh></v>
+</v>
+<v t="leo.20210524155058.1"><vh>Range3編訂參數型式</vh>
+<v t="leo.20210524155058.2"><vh>Range3編訂參數型式</vh></v>
+</v>
+<v t="leo.20210524155231.1"><vh>Range3邊界條件初始條件設置</vh>
+<v t="leo.20210524155231.2"><vh>Range3邊界條件初始條件設置</vh></v>
+</v>
+<v t="leo.20210524155358.1"><vh>Range3(位移及有效應力)</vh>
+<v t="leo.20210524155358.2"><vh>Range3位移及有效應力</vh></v>
+</v>
+<v t="leo.20210524155454.1"><vh>Range3(位移及有效應力圖)</vh>
+<v t="leo.20210524155454.2"><vh>Range3位移及有效應力圖</vh></v>
+</v>
+<v t="leo.20210524155548.1"><vh>Abaqus簡介</vh>
+<v t="leo.20210524155548.2"><vh>Abaqus簡介</vh></v>
+</v>
+<v t="leo.20210524160852.1"><vh>Abaqus單位制</vh>
+<v t="leo.20210524160852.2"><vh>Abaqus單位制</vh></v>
+</v>
+<v t="leo.20210524160953.1"><vh>Abaqus應力位移圖</vh>
+<v t="leo.20210524160953.2"><vh>Abaqus應力位移圖</vh></v>
+</v>
+<v t="leo.20210524161042.1"><vh>Abaqus Range 3數據比較</vh>
+<v t="leo.20210524161042.2"><vh>Abaqus Range 3數據比較</vh></v>
+</v>
+<v t="leo.20210524152820.1"><vh>問題討論封面</vh>
+<v t="leo.20210524152820.2"><vh>問題討論封面</vh></v>
+</v>
+<v t="leo.20210524133118.1"><vh>問題討論</vh>
+<v t="leo.20210524133118.2"><vh>問題討論</vh></v>
 </v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20180902120523.16" a="E"><vh>導入縮排程式碼</vh>
+<v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
-<v t="leo.20180902120523.18" a="E"><vh>導入影片</vh>
+<v t="leo.20180902120523.18"><vh>導入影片</vh>
 <v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
@@ -48,18 +105,6 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
-
-### KMOLab
-
-&lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
-&lt;/small&gt;
-
-[CMSimfly 網誌](./../blog/index.html)
-
-
-</t>
 <t tx="leo.20180902120523.11">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -68,16 +113,6 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 
 						
-</t>
-<t tx="leo.20180902120523.12"># 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
@@ -241,15 +276,6 @@ CMSimfly 網際內容管理
 &lt;/div&gt;
 
 </t>
-<t tx="leo.20180902120523.9">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
 <t tx="leo.20180902120538.1"></t>
 <t tx="leo.20180902120538.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -326,5 +352,471 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20210523102652.1">&lt;section data-background-image="https://i.imgur.com/vuLvVl9.png"&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="right"&gt;有限元素分析解析與應用&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;p&gt;&lt;font face="標楷體"&gt;&lt;p align="right"&gt;&lt;small&gt;&lt;font color="black"&gt;組員:&lt;a href="https://github.com/s40723212"&gt;40723212 李建杰&lt;/a&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href="https://github.com/s40723216"&gt;40723216 林子欽 &lt;/a&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href="https://github.com/s40723223"&gt;40723223 洪維辰 &lt;/a&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href="https://github.com/s40723246"&gt;40723246 鄭竣元&lt;/a&gt;&lt;/font&gt;&lt;/small&gt;&lt;/font&gt;&lt;/p&gt;&lt;/p&gt;
+
+</t>
+<t tx="leo.20210524083803.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524083803.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="center"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;目錄&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font size="6"&gt;&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="right"&gt;
+&lt;br&gt;
+一.摘要&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;hr align="right" width="600"px&gt;
+二.研究目的
+&lt;hr align="right" width="600"px&gt;
+&amp;nbsp; 三.1D,2D 理論
+&lt;hr align="right" width="600"px&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;  四.Range 3與Abaqus之比較
+&lt;hr align="right" width="600"px&gt;
+五.問題討論
+&lt;hr align="right" width="600"px&gt;
+&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/font&gt;
+
+
+
+&lt;section data-background-image="https://i.imgur.com/KE5F0V3.png"&gt;
+</t>
+<t tx="leo.20210524132844.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524132844.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;研究目的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524132846.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524132846.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524132849.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524132849.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range3簡介&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.Range Sofrware公司所釋出之開源有限元素分析軟體&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.使用Qt C++開發框架編成&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.使用TenGen生成網格&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524133118.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524133118.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;問題討論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;br&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.Range 3 BUG&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.Abaqus單位制&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.Abaqus支援檔案格式問題&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524133344.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524133344.2">&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;一.摘要&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+
+&lt;section data-background-image="https://i.imgur.com/6sdM23Z.png"&gt;
+
+
+</t>
+<t tx="leo.20210524135335.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524135335.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;2D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524151710.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524151710.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;摘要&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524152407.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524152407.2">&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;二.研究目的&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+
+&lt;section data-background-image="https://i.imgur.com/6sdM23Z.png"&gt;
+
+
+</t>
+<t tx="leo.20210524152555.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524152555.2">&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;三.1D,2D&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+
+&lt;section data-background-image="https://i.imgur.com/6sdM23Z.png"&gt;
+
+
+</t>
+<t tx="leo.20210524152733.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524152733.2">&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;四.Range3與Abaqus之比較&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+
+&lt;section data-background-image="https://i.imgur.com/6sdM23Z.png"&gt;
+
+
+</t>
+<t tx="leo.20210524152820.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524152820.2">&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;五.問題與討論&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+
+&lt;section data-background-image="https://i.imgur.com/6sdM23Z.png"&gt;
+
+
+</t>
+<t tx="leo.20210524154520.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524154520.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3分析&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;img src="https://i.imgur.com/1Ir104q.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+</t>
+<t tx="leo.20210524155058.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524155058.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3編訂參數型式&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.Element type&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.Mesh&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.Node&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524155231.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524155231.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3邊界條件及初始條件設置&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.Problem setup&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.Boundry Condition&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.Initial condition&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;4.Environment condition&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524155358.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524155358.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3位移及有效應力&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;img src="https://i.imgur.com/WtsW9WW.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524155454.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524155454.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3位移及有效應力圖&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;img src="https://i.imgur.com/DXJlTyp.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524155548.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524155548.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus簡介&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.提供多種CAD檔案格式&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.可結合Python制定使用幾何介面&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.提供單獨interaction&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524160852.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524160852.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus單位制&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;img src="https://i.imgur.com/D1j0ISC.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524160953.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524160953.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus應力位移圖&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;img src="https://i.imgur.com/bKAppKD.png" width="1000" heigh="1500" alt="一張圖片"&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210524161042.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210524161042.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus Range 3數據比較&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+
+&lt;img src="https://i.imgur.com/lGd2yH1.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
 </tnodes>
 </leo_file>
