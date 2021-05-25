@@ -39,8 +39,14 @@
 <v t="leo.20210524152555.1"><vh>1D,2D封面</vh>
 <v t="leo.20210524152555.2"><vh>1D,2D封面</vh></v>
 </v>
-<v t="leo.20210524132846.1"><vh>1D理論</vh>
-<v t="leo.20210524132846.2"><vh>1D理論</vh></v>
+<v t="leo.20210524132846.1"><vh>1D理論-1</vh>
+<v t="leo.20210524132846.2"><vh>1D理論-1</vh></v>
+</v>
+<v t="leo.20210525173339.1"><vh>1D理論-2</vh>
+<v t="leo.20210525173339.2"><vh>1D理論-2</vh></v>
+</v>
+<v t="leo.20210525173341.1"><vh>1D理論-3</vh>
+<v t="leo.20210525173341.2"><vh>1D理論-3</vh></v>
 </v>
 <v t="leo.20210524135335.1"><vh>2D理論</vh>
 <v t="leo.20210524135335.2"><vh>2D理論</vh></v>
@@ -406,6 +412,12 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20210524132844.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;研究目的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
+&lt;br&gt;
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;市面上有許多有限元素分析軟體，我們將其分類為開源軟體(range 3)及付費軟體(abaqus、ansys)
+以下報告我們將使用range3對比市面上主流有限元素分析軟體之數值，證明range 3分析之數值式具有參考價值
+&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;img src="https://i.imgur.com/dwBOMvg.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
@@ -420,7 +432,11 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20210524132846.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+<t tx="leo.20210524132846.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D 理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;br&gt;
+
+&lt;img src="https://i.imgur.com/sET3F6S.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
@@ -527,7 +543,8 @@ vertical: body pane on the botton</t>
 <t tx="leo.20210524151710.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;摘要&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 
-
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;本文希望透過分析及比較數據結果，來驗證是否可以取代付費數值分析軟體，range3是一套開源有限元素分析軟體，可幫助使用者分析設計的工程問題來設計出最佳化產品。以下簡報主要在探討應力分析問題(Stress analysis)，根據使用者所需條件的設定及參數的設置，來查看其變化情形，並透過多次分析測試結果，來判別是否可以利用或取代其他分析軟體
+&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
@@ -813,6 +830,42 @@ vertical: body pane on the botton</t>
 
 
 &lt;img src="https://i.imgur.com/lGd2yH1.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210525173339.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210525173339.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;br&gt;&lt;img src="https://i.imgur.com/aWjVTbx.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210525173341.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210525173341.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;br&gt;&lt;img src="https://i.imgur.com/kRygpgy.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
