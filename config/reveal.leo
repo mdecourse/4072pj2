@@ -90,6 +90,12 @@
 <v t="leo.20210524133118.1"><vh>問題討論</vh>
 <v t="leo.20210524133118.2"><vh>問題討論</vh></v>
 </v>
+<v t="leo.20210602211133.1"><vh>討論</vh>
+<v t="leo.20210602211133.2"><vh>問題討論</vh></v>
+</v>
+<v t="leo.20210602210217.1"><vh>結束封面</vh>
+<v t="leo.20210602210217.2"><vh>結束封面</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -324,7 +330,6 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20210524132844.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;研究目的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
-&lt;br&gt;
 &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;市面上有許多有限元素分析軟體，我們將其分類為開源軟體(range 3)及付費軟體(abaqus、ansys)
 以下報告我們將使用range3對比市面上主流有限元素分析軟體之數值，證明range 3分析之數值式具有參考價值
 &lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
@@ -346,9 +351,8 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20210524132846.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D 理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
-&lt;br&gt;
 
-&lt;img src="https://i.imgur.com/sET3F6S.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/sET3F6S.png" width="1500" heigh="1500" alt="一張圖片"&gt;
 
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
@@ -418,7 +422,7 @@ vertical: body pane on the botton</t>
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
- ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;一.摘要&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;一.摘要 &lt;br&gt;&lt;small&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;主講者:洪維辰&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/small&gt;
 
 
 
@@ -436,7 +440,11 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20210524135335.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;2D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+<t tx="leo.20210524135335.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;2D理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+&lt;img src="https://i.imgur.com/CRqfR2u.png" width="600" heigh="600" alt="一張圖片"&gt;
 
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
@@ -479,8 +487,7 @@ vertical: body pane on the botton</t>
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
- ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;二.研究目的&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;二.研究目的 &lt;br&gt;&lt;small&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;主講者:洪維辰&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/small&gt;
 
 
 
@@ -504,8 +511,7 @@ vertical: body pane on the botton</t>
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
-&lt;br&gt;
- ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;三.1D,2D&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;三.1D,2D &lt;br&gt;&lt;br&gt;&lt;small&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;主講者:洪維辰(1D)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;林子欽(2D)&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/small&gt;
 
 
 
@@ -530,9 +536,7 @@ vertical: body pane on the botton</t>
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
-&lt;br&gt;
- ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;四.Range3與Abaqus之比較&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;四.Range3與Abaqus之比較 &lt;br&gt;&lt;br&gt;&lt;small&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;主講者:鄭竣元(Range3)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;李建杰(Abaqus)&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/small&gt;
 
 
 
@@ -557,7 +561,7 @@ vertical: body pane on the botton</t>
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
- ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;五.問題與討論&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;五.問題與討論 &lt;br&gt;&lt;small&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;主講者:李建杰&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/small&gt;
 
 
 
@@ -639,9 +643,8 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20210524155358.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3位移及有效應力&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br&gt;
 
-&lt;img src="https://i.imgur.com/WtsW9WW.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/WtsW9WW.png" width="1500" heigh="1500" alt="一張圖片"&gt;
 
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
@@ -658,7 +661,6 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20210524155454.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3位移及有效應力圖&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br&gt;
 
 &lt;img src="https://i.imgur.com/DXJlTyp.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
@@ -701,9 +703,8 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20210524160852.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus單位制&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br&gt;
 
-&lt;img src="https://i.imgur.com/D1j0ISC.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/D1j0ISC.png" width="1900" heigh="1900" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
@@ -719,9 +720,8 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20210524160953.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus應力位移圖&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br&gt;
 
-&lt;img src="https://i.imgur.com/bKAppKD.png" width="1000" heigh="1500" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/bKAppKD.png" width="1500" heigh="1500" alt="一張圖片"&gt;
 
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
@@ -738,10 +738,9 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20210524161042.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus Range 3數據比較&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br&gt;
 
 
-&lt;img src="https://i.imgur.com/lGd2yH1.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/mkM7u7X.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
@@ -756,9 +755,9 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20210525173339.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+<t tx="leo.20210525173339.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
-&lt;br&gt;&lt;img src="https://i.imgur.com/aWjVTbx.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/aWjVTbx.png" width="1500" heigh="1500" alt="一張圖片"&gt;
 
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
@@ -774,10 +773,54 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20210525173341.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+<t tx="leo.20210525173341.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
-&lt;br&gt;&lt;img src="https://i.imgur.com/kRygpgy.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/kRygpgy.png" width="1000" heigh="1500" alt="一張圖片"&gt;
 
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210602210217.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210602210217.2">&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+ ## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;感謝聆聽&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+
+&lt;section data-background-image="https://i.imgur.com/6sdM23Z.png"&gt;
+
+
+</t>
+<t tx="leo.20210602211133.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210602211133.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;問題討論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+&lt;img src="https://i.imgur.com/2stKPwm.png" width="910" heigh="910" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
