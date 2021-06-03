@@ -81,6 +81,9 @@
 <v t="leo.20210524160953.1"><vh>Abaqus應力位移圖</vh>
 <v t="leo.20210524160953.2"><vh>Abaqus應力位移圖</vh></v>
 </v>
+<v t="leo.20210603170533.1"><vh>Abaqus應力位移圖</vh>
+<v t="leo.20210603170533.2"><vh>Abaqus應力位移圖</vh></v>
+</v>
 <v t="leo.20210524161042.1"><vh>Abaqus Range 3數據比較</vh>
 <v t="leo.20210524161042.2"><vh>Abaqus Range 3數據比較</vh></v>
 </v>
@@ -821,6 +824,24 @@ vertical: body pane on the botton</t>
 
 
 &lt;img src="https://i.imgur.com/2stKPwm.png" width="910" heigh="910" alt="一張圖片"&gt;
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210603170533.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210603170533.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus應力位移圖&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;img src="https://i.imgur.com/dquXq28.gif" width="1500" heigh="1500" alt="一張圖片"&gt;
+
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
