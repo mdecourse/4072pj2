@@ -42,12 +42,6 @@
 <v t="leo.20210524132846.1"><vh>1D理論-1</vh>
 <v t="leo.20210524132846.2"><vh>1D理論-1</vh></v>
 </v>
-<v t="leo.20210525173339.1"><vh>1D理論-2</vh>
-<v t="leo.20210525173339.2"><vh>1D理論-2</vh></v>
-</v>
-<v t="leo.20210525173341.1"><vh>1D理論-3</vh>
-<v t="leo.20210525173341.2"><vh>1D理論-3</vh></v>
-</v>
 <v t="leo.20210524135335.1"><vh>2D理論</vh>
 <v t="leo.20210524135335.2"><vh>2D理論</vh></v>
 </v>
@@ -57,14 +51,14 @@
 <v t="leo.20210524132849.1"><vh>Range3簡介</vh>
 <v t="leo.20210524132849.2"><vh>Range3簡介</vh></v>
 </v>
+<v t="leo.20210609200556.1"><vh>Range3流程圖</vh>
+<v t="leo.20210609200556.2"><vh>Range3流程圖</vh></v>
+</v>
 <v t="leo.20210524154520.1"><vh>Range3分析</vh>
 <v t="leo.20210524154520.2"><vh>Range3分析</vh></v>
 </v>
-<v t="leo.20210524155058.1"><vh>Range3編訂參數型式</vh>
-<v t="leo.20210524155058.2"><vh>Range3編訂參數型式</vh></v>
-</v>
 <v t="leo.20210524155231.1"><vh>Range3邊界條件初始條件設置</vh>
-<v t="leo.20210524155231.2"><vh>Range3邊界條件初始條件設置</vh></v>
+<v t="leo.20210524155231.2"><vh>Range3條件設置</vh></v>
 </v>
 <v t="leo.20210524155358.1"><vh>Range3(位移及有效應力)</vh>
 <v t="leo.20210524155358.2"><vh>Range3位移及有效應力</vh></v>
@@ -74,6 +68,9 @@
 </v>
 <v t="leo.20210524155548.1"><vh>Abaqus簡介</vh>
 <v t="leo.20210524155548.2"><vh>Abaqus簡介</vh></v>
+</v>
+<v t="leo.20210609201121.1"><vh>Abaqus流程圖</vh>
+<v t="leo.20210609201121.2"><vh>Abaqus流程圖</vh></v>
 </v>
 <v t="leo.20210524160852.1"><vh>Abaqus單位制</vh>
 <v t="leo.20210524160852.2"><vh>Abaqus單位制</vh></v>
@@ -86,6 +83,9 @@
 </v>
 <v t="leo.20210524161042.1"><vh>Abaqus Range 3數據比較</vh>
 <v t="leo.20210524161042.2"><vh>Abaqus Range 3數據比較</vh></v>
+</v>
+<v t="leo.20210609211031.1"><vh>Abaqus Range 3應力比較</vh>
+<v t="leo.20210609211031.2"><vh>Abaqus Range 3應力比較</vh></v>
 </v>
 <v t="leo.20210524152820.1"><vh>問題討論封面</vh>
 <v t="leo.20210524152820.2"><vh>問題討論封面</vh></v>
@@ -281,7 +281,7 @@ QLineEdit#editorLabel {
 vertical: body pane on the botton</t>
 <t tx="leo.20210523102652.1">&lt;section data-background-image="https://i.imgur.com/vuLvVl9.png"&gt;
 
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="right"&gt;有限元素分析解析與應用&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="right"&gt;有限元素分析套件解析應用&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 &lt;br&gt;
 &lt;br&gt;
@@ -355,7 +355,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20210524132846.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D 理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 
-&lt;img src="https://i.imgur.com/sET3F6S.png" width="1500" heigh="1500" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/ZxDOO5y.png" width="1500" heigh="1500" alt="一張圖片"&gt;
 
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
@@ -374,12 +374,8 @@ vertical: body pane on the botton</t>
 <t tx="leo.20210524132849.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range3簡介&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;br&gt;
 
+&lt;img src="https://i.imgur.com/PblwpdL.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.Range Sofrware公司所釋出之開源有限元素分析軟體&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.使用Qt C++開發框架編成&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.使用TenGen生成網格&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
@@ -584,32 +580,9 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20210524154520.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3分析&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
-&lt;img src="https://i.imgur.com/1Ir104q.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/2c0hTEj.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
-</t>
-<t tx="leo.20210524155058.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20210524155058.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3編訂參數型式&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br&gt;
-
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.Element type&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.Mesh&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.Node&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
-
-
 </t>
 <t tx="leo.20210524155231.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -620,17 +593,11 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20210524155231.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3邊界條件及初始條件設置&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+<t tx="leo.20210524155231.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range 3條件設置&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;br&gt;
 
+&lt;img src="https://i.imgur.com/4TQgIyi.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.Problem setup&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.Boundry Condition&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.Initial condition&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;4.Environment condition&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
@@ -749,42 +716,6 @@ vertical: body pane on the botton</t>
 
 
 </t>
-<t tx="leo.20210525173339.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20210525173339.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;img src="https://i.imgur.com/aWjVTbx.png" width="1500" heigh="1500" alt="一張圖片"&gt;
-
-
-&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
-
-
-</t>
-<t tx="leo.20210525173341.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20210525173341.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;img src="https://i.imgur.com/kRygpgy.png" width="1000" heigh="1500" alt="一張圖片"&gt;
-
-
-&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
-
-
-</t>
 <t tx="leo.20210602210217.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -823,7 +754,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20210602211133.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;問題討論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 
-&lt;img src="https://i.imgur.com/2stKPwm.png" width="910" heigh="910" alt="一張圖片"&gt;
+&lt;img src="https://i.imgur.com/XeKbT2U.png" width="910" heigh="910" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
@@ -842,6 +773,62 @@ vertical: body pane on the botton</t>
 
 &lt;img src="https://i.imgur.com/dquXq28.gif" width="1500" heigh="1500" alt="一張圖片"&gt;
 
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210609200556.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210609200556.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Range3分析規劃圖&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;img src="https://i.imgur.com/CsadlrL.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210609201121.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210609201121.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus分析規劃圖&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;img src="https://i.imgur.com/3d6rymh.png" width="1000" heigh="1000" alt="一張圖片"&gt;
+
+
+&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
+
+
+</t>
+<t tx="leo.20210609211031.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20210609211031.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus Range 3數據比較&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+&lt;img src="https://i.imgur.com/7YzoYup.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
 
