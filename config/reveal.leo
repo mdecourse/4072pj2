@@ -42,9 +42,6 @@
 <v t="leo.20210524132846.1"><vh>1D理論-1</vh>
 <v t="leo.20210524132846.2"><vh>1D理論-1</vh></v>
 </v>
-<v t="leo.20210524135335.1"><vh>2D理論</vh>
-<v t="leo.20210524135335.2"><vh>2D理論</vh></v>
-</v>
 <v t="leo.20210524152733.1"><vh>Range3與Abaqus之比較封面</vh>
 <v t="leo.20210524152733.2"><vh>Range3與Abaqus之比較封面</vh></v>
 </v>
@@ -352,7 +349,7 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20210524132846.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D 理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+<t tx="leo.20210524132846.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;1D、2D 理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
 
 
 &lt;img src="https://i.imgur.com/ZxDOO5y.png" width="1500" heigh="1500" alt="一張圖片"&gt;
@@ -430,26 +427,6 @@ vertical: body pane on the botton</t>
 
 
 </t>
-<t tx="leo.20210524135335.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20210524135335.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="10"&gt;&lt;p align="left"&gt;2D理論&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-
-
-&lt;img src="https://i.imgur.com/CRqfR2u.png" width="600" heigh="600" alt="一張圖片"&gt;
-
-
-&lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
-
-
-</t>
 <t tx="leo.20210524151710.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -510,7 +487,7 @@ vertical: body pane on the botton</t>
 &lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
-## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;三.1D,2D &lt;br&gt;&lt;br&gt;&lt;small&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;主講者:洪維辰(1D)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;林子欽(2D)&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/small&gt;
+## &lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;p align="center"&gt;三.1D,2D &lt;br&gt;&lt;br&gt;&lt;small&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;主講者:洪維辰(1D)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;洪維辰(2D)&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/small&gt;
 
 
 
