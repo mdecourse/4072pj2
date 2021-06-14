@@ -650,18 +650,10 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20210524155548.2">&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="7"&gt;&lt;p align="left"&gt;Abaqus簡介&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;br&gt;
 
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;1.提供多種CAD檔案格式&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;2.可結合Python制定使用幾何介面&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;font face="標楷體"&gt;&lt;font color="black"&gt;&lt;font size="6"&gt;&lt;p align="left"&gt;3.提供單獨interaction&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;img src="https://i.imgur.com/yfGGnid.png" width="1000" heigh="1000" alt="一張圖片"&gt;
 
 &lt;section data-background-image="https://i.imgur.com/voFID5B.png"&gt;
-
-
 </t>
 <t tx="leo.20210524160852.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
